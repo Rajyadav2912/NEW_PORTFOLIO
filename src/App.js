@@ -11,16 +11,16 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <div>
+    <div className="w-screen h-screen mx-auto overflow-x-hidden bg-black text-white">
+      <div className="relative flex justify-center mx-auto ">
         <NavBar />
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/education" element={<Education />} />
-        <Route path="/skill" element={<Skill />} />
-        <Route path="/project" element={<Project />} />
+        <Route path="/skills" element={<Skill />} />
+        <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
