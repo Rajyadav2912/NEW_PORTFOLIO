@@ -1,24 +1,60 @@
-import React from "react";
-import "./Card.css";
-import Student from "../Assets/3D ICON/student.png";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Arrow from "../Assets/Images/arrow.svg";
+import githubIcon from "../Assets/3D ICON/github.png";
 
-const Card = ({ name, date, image, branch, standard }) => {
+const Card = ({ image, title, date, info, weblink, skill }) => {
+  const [readmore, setReadMore] = useState(false);
+
+  const description = readmore ? info : `${info.substring(0, 130)}....`;
+
+  function readmoreHanlder() {
+    console.log("click hua hn");
+    setReadMore(!readmore);
+    // console.log(description);
+  }
+
   return (
-    <div className=" ">
-      <div className="container">
-        <span className="line"></span>
-        <div className="student-box">
-          <img src={Student} alt="" />
-        </div>
-
-        <div className="Box">
-          <img src={image} alt="" />
-
-          <h2 className="text-[18px]">{name}</h2>
-          <h3>{branch}</h3>
-          <h4>{standard}</h4>
-          <span className="border ml-[40rem] w-[20rem]">{date}</span>
-        </div>
+    <div className="w-[350px] h-full border rounded-3xl flex flex-col justify-center gap-5 p-4">
+      <div className="relative">
+        <img src={image} alt="" />
+        <Link>
+          <img
+            src={githubIcon}
+            alt=""
+            className="absolute w-[60px] top-0 right-0"
+          />
+        </Link>
+      </div>
+      <div className="flex gap-3">
+        {skill.map((skill, index) => (
+          <div className="w-[40px]">
+            <img src={skill.image} />
+          </div>
+        ))}
+      </div>
+      <div className="text-[16px] font-bold ">
+        <p>{title}</p>
+        <p>{date}</p>
+      </div>
+      <div>
+        <p className="text-justify">
+          {description}
+          <span
+            className="text-blue-600 cursor-pointer"
+            onClick={readmoreHanlder}
+          >
+            {readmore ? `...Show less` : `Read more`}
+          </span>
+        </p>
+      </div>
+      <div className="w-[210px] mx-auto">
+        <Link to={weblink}>
+          <button className="w-full flex h-full py-2 px-4 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
+            Go to Web page
+            <img src={Arrow} alt="arrow" loading="lazy" />
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
 import React from "react";
 import About from "../Components/About/About";
 import Home from "../Components/Home/Home";
-import Education from "./Education";
+import Education from "../Components/Experience/Education";
+import Skill from "../Components/Skill/Skill";
+import Project from "../Components/Project/Project";
 
 const Main = () => {
   return (
@@ -9,6 +11,8 @@ const Main = () => {
       <Home />
       <About />
       <Education />
+      <Skill />
+      <Project />
     </div>
   );
 };

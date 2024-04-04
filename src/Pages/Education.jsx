@@ -1,27 +1,17 @@
 import React from "react";
-import Data from "../data";
-import Card from "../Components/Card/Card";
+import Cards from "../Components/Experience/Cards";
 
 const Education = () => {
-  const eduData = Data.Education;
-
   return (
-    <div className="my-12 flex flex-col items-center">
-      <h2 className="h2-heading">What I Have Qualification</h2>
-      <h1 className="h1-heading">My Education</h1>
+    <div className="py-[90px]">
+      <div className="mx-auto max-w-[380px] text-center">
+        <h2 className="h2-heading">What I Have Qualification</h2>
+        <h1 className="h1-heading">My Education</h1>
+      </div>
       <div className="page-3">
-        {/* <Card /> */}
-        {eduData.map((data, index) => (
-          <Card
-            key={index}
-            name={data.name}
-            image={data.image}
-            branch={data.branch}
-            standard={data.standard}
-            date={data.date}
-          />
-          // console.log(data);
-        ))}
+        <div className="p-16">
+          <Cards />
+        </div>
       </div>
     </div>
   );

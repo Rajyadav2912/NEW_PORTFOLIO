@@ -5,16 +5,16 @@ import HTML from "./Components/Assets/3D ICON/html.png";
 import CSS from "./Components/Assets/3D ICON/css.png";
 import Javascript from "./Components/Assets/3D ICON/js.png";
 import Tailwind from "./Components/Assets/3D ICON/Tailwind.png";
-import MongoDB from "./Components/Assets/3D ICON/java.png";
-import Express from "./Components/Assets/3D ICON/java.png";
-import React from "./Components/Assets/3D ICON/java.png";
-import Node from "./Components/Assets/3D ICON/java.png";
-import Redux from "./Components/Assets/3D ICON/java.png";
-import GitHub from "./Components/Assets/3D ICON/java.png";
+import MongoDB from "./Components/Assets/3D ICON/mongo-db.png";
+import Express from "./Components/Assets/3D ICON/express.png";
+import React from "./Components/Assets/3D ICON/react.png";
+import Node from "./Components/Assets/3D ICON/NodeJs.png";
+import Redux from "./Components/Assets/3D ICON/redux.png";
+import GitHub from "./Components/Assets/3D ICON/skill-github.png";
 import Git from "./Components/Assets/3D ICON/Git.png";
-import Figma from "./Components/Assets/3D ICON/java.png";
-import Arduino from "./Components/Assets/3D ICON/java.png";
-import Vercel from "./Components/Assets/3D ICON/java.png";
+import Figma from "./Components/Assets/3D ICON/Figma.png";
+import Arduino from "./Components/Assets/3D ICON/Arduino.png";
+import Vercel from "./Components/Assets/3D ICON/Vercel.png";
 
 // Collage & School img
 import PIEMR from "./Components/Assets/Images/PIEMR.png";
@@ -54,6 +54,159 @@ const data = {
     location: "Indore (M.P), 452010",
   },
   Project: [
+    // 1. title: "My Portfolio",
+    {
+      id: 1,
+      title: "My Portfolio",
+      date: "Jan 2024 - feb 2024",
+      description:
+        "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
+      image: My_Portfolio,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "CSS",
+          image: css,
+        },
+        {
+          id: 3,
+          name: "JavaScript",
+          image: Js,
+        },
+      ],
+      category: "HTML/CSS/Js",
+    },
+    // 2. title: "Contact APP with CRUD",
+    {
+      id: 2,
+      title: "Contact APP with CRUD",
+      date: "Jan 2024 - feb 2024",
+      description:
+        "Developed a Contact App project with CRUD (Create, Read, Update, Delete) functionality. Implemented Firebase as the backend database for data management. Utilized Vite and React.js for core structure and functionality of application",
+      image: Contact_APP,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "Vite and React.js",
+          image: Vite_React,
+        },
+        {
+          id: 2,
+          name: "Node.js",
+          image: node,
+        },
+        {
+          id: 3,
+          name: "Tailwind.css",
+          image: tailwind,
+        },
+        {
+          id: 4,
+          name: "Firebase",
+          image: firebase,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 3 title: "Nike Shoes Website",
+    {
+      id: 3,
+      title: "Nike Shoes Website",
+      date: "Feb 2024 - March 2024",
+      description:
+        "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
+      image: Nike_Shoe,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "React.js",
+          image: react,
+        },
+        {
+          id: 2,
+          name: "Node.js",
+          image: node,
+        },
+        {
+          id: 3,
+          name: "Tailwind.css",
+          image: tailwind,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 4. title: "Weather Tracking Web App",
+    {
+      id: 4,
+      title: "Weather Tracking Web App",
+      date: "Feb 2024 - March 2024",
+      description:
+        "Created a user-friendly interface using HTML and CSS for smooth experience. Used advanced Js techniques to dynamically update information. Mastered fetch API's integration, combining with Js skills to build an interactive Weather Tracker Web App.",
+      image: Weather_Tracker,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "CSS",
+          image: css,
+        },
+        {
+          id: 3,
+          name: "Javascript",
+          image: Js,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 6. title: "E-commerce Shopping Website",
+    {
+      id: 6,
+      title: "E-commerce Shopping Website",
+      date: "July 2023 - Aug 2024",
+      description:
+        "Built an E-commerce shopping website using HTML, CSS, and JavaScript. Implemented a product catalogue, shopping cart, blog site, about, services and checkout process. Made the website responsive for mobile-friendly and any device.",
+      image: Cara_E_commerce,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "CSS",
+          image: css,
+        },
+        {
+          id: 3,
+          name: "JavaScript",
+          image: Js,
+        },
+      ],
+      category: "Frontend",
+    },
+  ],
+
+  Projects: [
     // 1. title: "My Portfolio",
     {
       id: 1,
@@ -407,6 +560,7 @@ const data = {
       category: "Frontend",
     },
   ],
+
   Education: [
     {
       id: 1,
