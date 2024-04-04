@@ -55,6 +55,7 @@ code {
   margin-right: auto;
   margin-left: auto;
   margin-top: 2rem;
+  padding-bottom: 40px;
   border-radius: 12.5rem;
   border: 1px solid;
   background: var(--Boxcolor);
@@ -69,6 +70,7 @@ code {
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin-top: 2rem;
   border-radius: 9.375rem;
   border: 1px solid;
   background: var(--Boxcolor);

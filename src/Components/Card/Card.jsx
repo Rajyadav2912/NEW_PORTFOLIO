@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Arrow from "../Assets/Images/arrow.svg";
 import githubIcon from "../Assets/3D ICON/github.png";
 
-const Card = ({ image, title, date, info, weblink, skill }) => {
+const Card = ({ image, title, date, info, weblink, skill, key }) => {
   const [readmore, setReadMore] = useState(false);
 
   const description = readmore ? info : `${info.substring(0, 130)}....`;
@@ -27,8 +27,8 @@ const Card = ({ image, title, date, info, weblink, skill }) => {
         </Link>
       </div>
       <div className="flex gap-3">
-        {skill.map((skill, index) => (
-          <div className="w-[40px]">
+        {skill.map((skill) => (
+          <div className="w-[35px]">
             <img src={skill.image} />
           </div>
         ))}
@@ -41,10 +41,10 @@ const Card = ({ image, title, date, info, weblink, skill }) => {
         <p className="text-justify">
           {description}
           <span
-            className="text-blue-600 cursor-pointer"
+            className="text-blue-600 cursor-pointer text-[15px]"
             onClick={readmoreHanlder}
           >
-            {readmore ? `...Show less` : `Read more`}
+            {readmore ? `...show less` : `read more`}
           </span>
         </p>
       </div>
