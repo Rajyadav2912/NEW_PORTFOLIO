@@ -1,29 +1,32 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+// import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
-import Home from "./Pages/Home";
-import Project from "./Pages/Project";
+// import Skill from "./Components/Skill";
+// import Footer from "./Components/Footer";
+import Education from "./Components/Experience/Education";
+import Contact from "./Pages/Contact";
 import About from "./Pages/About";
-import Education from "./Components/Education/Education";
-import Skill from "./Components/Skill/Skill";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+// import Education from "./Pages/Education";
+
+import Project from "./Pages/Project";
+import Main from "./Pages/Main";
 
 function App() {
   return (
     <div className="w-screen h-screen mx-auto overflow-x-hidden bg-black text-white">
-      <div className="relative flex justify-center mx-auto ">
+      <div className="relative flex justify-center mx-auto">
         <NavBar />
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/education" element={<Education />} />
-        <Route path="/skills" element={<Skill />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      {/* <div className="mt-[45rem]">
+        <Footer />
+      </div> */}
     </div>
   );
 }

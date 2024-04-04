@@ -1,20 +1,20 @@
 // Skills imges
-import About_img from "./Assets/Images/Profile pic.jpg";
-import Java from "./Assets/3D ICON/java.png";
-import HTML from "./Assets/3D ICON/html.png";
-import CSS from "./Assets/3D ICON/css.png";
-import Javascript from "./Assets/3D ICON/js.png";
-import Tailwind_css from "./Assets/3D ICON/Tailwind.png";
-import MongoDB from "./Assets/3D ICON/java.png";
-import Express from "./Assets/3D ICON/java.png";
-import React from "./Assets/3D ICON/java.png";
-import Node from "./Assets/3D ICON/java.png";
-import Redux from "./Assets/3D ICON/java.png";
-import GitHub from "./Assets/3D ICON/java.png";
-import Git from "./Assets/3D ICON/Git.png";
-import Figma from "./Assets/3D ICON/java.png";
-import Arduino from "./Assets/3D ICON/java.png";
-import Vercel from "./Assets/3D ICON/java.png";
+import About_img from "./Components/Assets/Images/Profile pic.jpg";
+import Java from "./Components/Assets/3D ICON/java.png";
+import HTML from "./Components/Assets/3D ICON/html.png";
+import CSS from "./Components/Assets/3D ICON/css.png";
+import Javascript from "./Components/Assets/3D ICON/js.png";
+import Tailwind from "./Components/Assets/3D ICON/Tailwind.png";
+import MongoDB from "./Components/Assets/3D ICON/java.png";
+import Express from "./Components/Assets/3D ICON/java.png";
+import React from "./Components/Assets/3D ICON/java.png";
+import Node from "./Components/Assets/3D ICON/java.png";
+import Redux from "./Components/Assets/3D ICON/java.png";
+import GitHub from "./Components/Assets/3D ICON/java.png";
+import Git from "./Components/Assets/3D ICON/Git.png";
+import Figma from "./Components/Assets/3D ICON/java.png";
+import Arduino from "./Components/Assets/3D ICON/java.png";
+import Vercel from "./Components/Assets/3D ICON/java.png";
 
 // Collage & School img
 import PIEMR from "./Components/Assets/Images/PIEMR.png";
@@ -39,14 +39,14 @@ import tailwind from "./Components/Assets/Projects/Tailwind.png";
 import mongodb from "./Components/Assets/Projects/MongoDB.png";
 import express from "./Components/Assets/Projects/Express.png";
 import react from "./Components/Assets/Projects/React.png";
-import Vite_react from "./Components/Assets/Projects/Vite_react.png";
+import Vite_React from "./Components/Assets/Projects/Vite_react.png";
 import node from "./Components/Assets/Projects/Node.png";
 import firebase from "./Components/Assets/Projects/Firebase.png";
 
 const data = {
   About: {
     title: "ABOUT ME ",
-    heading: "Hi, I'm Raj Yadav & I'm Software Developer|",
+    heading: "Hi, I'm Raj Yadav & I'm Software Developer",
     description:
       "Currently in my 4th year pursuing a B.Tech in Electronics and Communication Engineering at PIEMR, I'm deeply passionate about the Software industry. As an avid learner and a naturally curious individual, I thrive on challenges and am always eager to explore new horizons in my academic and professional journey.",
     image: About_img,
@@ -97,7 +97,7 @@ const data = {
         {
           id: 1,
           name: "Vite and React.js",
-          image: vite_react,
+          image: Vite_React,
         },
         {
           id: 2,
@@ -412,25 +412,24 @@ const data = {
       id: 1,
       name: "Prestige Institute of Engineering Management & Research, Indore",
       date: "June 2020 - June 2024 | Pursuing",
-      Branch: "Electronic and Communication Engineering",
+      branch: "Branch: Electronic and Communication Engineering",
       image: PIEMR,
-      class: "4th",
     },
     {
       id: 2,
       name: "Nehru Bal Mandir Higher Secondry School, Indore",
       date: "June 2019 - March 2020",
-      Branch: "",
+      branch: "",
       image: NBM,
-      class: "12th (PCM) | MPBSE",
+      standard: "12th (PCM) | MPBSE",
     },
     {
       id: 3,
       name: "Nehru Bal Mandir Higher Secondry School, Indore",
       date: "June 2017 - March 2018",
-      Branch: "",
+      branch: "",
       image: NBM,
-      class: "10th | MPBSE",
+      standard: "10th | MPBSE",
     },
   ],
   Skill: [
@@ -457,17 +456,19 @@ const data = {
     {
       id: 5,
       name: "Tailwind.css",
-      image: Tailwind_css,
+      image: Tailwind,
     },
     {
       id: 6,
       name: "MongoDB",
       image: MongoDB,
+      mongodb,
     },
     {
       id: 7,
       name: "Express.js",
       image: Express,
+      express,
     },
     {
       id: 8,
@@ -511,3 +512,5 @@ const data = {
     },
   ],
 };
+
+export default data;

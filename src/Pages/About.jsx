@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+// import Abouts from "../Components/About";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div className="flex justify-center items-center text-center">
+      {/* <Abouts /> */}
 
-export default About
+      <div className="mt-[10rem]">About</div>
+    </div>
+  );
+};
+
+export default About;

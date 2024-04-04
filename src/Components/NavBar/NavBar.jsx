@@ -1,17 +1,31 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/Images/Logo 2.png";
 import circle from "../Assets/Images/circle.svg";
 import { FaMoon } from "react-icons/fa";
+// import { useEffect } from "react";
 
 const NavBar = () => {
-  const [moon, setMoon] = useState("moon");
+  // const [moon, setMoon] = useState("moon");
+
+  const gotoTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+    console.log("gotoTop", window);
+  };
+
+  // useEffect(() => {
+  //   gotoTop();
+  // }, []);
 
   return (
-    <div className="fixed w-[80%] h-[13%] border flex items-center justify-between py-3 px-10 z-[9999999] mx-auto">
+    <div className="fixed w-[90%] h-[12%] flex items-center justify-between py-3 px-10 z-[9999999] mx-auto bg-black">
       <div className="">
-        <Link className="flex items-center justify-center gap-1">
-          <div className="relative">
+        <Link to="/" className="flex items-center justify-center gap-1">
+          <div className="relative" onClick={gotoTop}>
             <img src={circle} alt="" />
             <img
               src={logo}
@@ -22,13 +36,22 @@ const NavBar = () => {
           <h2 className="text-[1.7rem] font-extrabold">Raj Yadav</h2>
         </Link>
       </div>
-      <div className="flex w-[50%]">
-        <ul className="flex justify-between gap-10 list-none text-[1.05rem] font-medium ">
+      <div className="flex w-[45%]">
+        <ul className="flex justify-between gap-10 list-none text-[1.05rem]s font-medium ">
           <li>
             <Link to="/">Home</Link>
+            {/* <a href="#home">Home</a> */}
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link
+              to="/about"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              About
+            </Link>
+            {/* <a href="#about">About</a> */}
           </li>
           <li>
             <Link to="/education">Education</Link>
