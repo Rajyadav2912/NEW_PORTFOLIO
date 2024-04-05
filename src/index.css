@@ -77,6 +77,12 @@ code {
   flex-shrink: 0;
 }
 
+.footer {
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
 ::-webkit-scrollbar {
   display: none;
   width: 0.4rem;
@@ -117,4 +123,32 @@ code {
 
 .box img {
   transform: translateZ(10px);
+}
+
+.topdown {
+  animation: topdown1 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes topdown1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.rightleft {
+  animation: right-left 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes right-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(15px);
+  }
 }

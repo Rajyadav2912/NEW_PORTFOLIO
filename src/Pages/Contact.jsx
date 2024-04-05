@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import hero from "../Components/Assets/Images/3d-Contact-image.png";
 import Web from "../Components/Assets/Images/web.png";
 import language from "../Components/Assets/3D ICON/language.png";
+// import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const [fromData, setFromData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    phone: "",
+    message: "",
+  });
+
+  const changeHanlder = (e) => {
+    setFromData((prev) => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      };
+    });
+    // console.log("changeHanlder", fromData);
+  };
+
+  function submitHandler() {
+    console.log("click submit");
+    console.log(fromData);
+  }
+
   return (
     <div className="py-[40px]">
       <div className="mx-auto max-w-[740px] text-center">
@@ -11,47 +35,74 @@ const Contact = () => {
         <h1 className="h1-heading">Contact Me</h1>
       </div>
       <div className="page-4">
-        <div className="w-[40%] relative">
-          <img src={hero} alt="" className="relative" />
+        <div className="w-[35%] relative">
+          <img src={hero} alt="" className="relative w-full" />
           <img
             src={Web}
             alt=""
-            className="absolute w-[90px] top-[64px] right-[40px]"
+            className="absolute w-[90px] top-[64px] right-[40px] topdown"
           />
           <img
             src={language}
             alt=""
-            className="absolute w-[90px] top-[20rem] left-[3rem]"
+            className="absolute w-[90px] top-[20rem] left-[3rem] rightleft"
           />
         </div>
-        <div className="w-[40%] flex flex-wrap gap-4">
-          <input
-            type="text"
-            className="w-[250px] h-[50px] px-3 rounded-lg"
-            placeholder="Enter full name..."
-          />
-          <input
-            type="text"
-            className="w-[250px] h-[50px] px-3 rounded-lg"
-            placeholder="Enter email eddress..."
-          />
-          <input
-            type="numver"
-            className="w-[250px] h-[50px] px-3 rounded-lg"
-            placeholder="Enter mob. No.."
-          />
-          <input
-            type="text"
-            className="w-[250px] h-[50px] px-3 rounded-lg"
-            placeholder="Enter email Subject..."
-          />
-          <textarea
-            row={5}
-            col={10}
-            placeholder="Message...."
-            onResize="none"
-            className="w-[84%] h-[200px] rounded-lg p-3"
-          ></textarea>
+        <div className="w-[45%] flex flex-col gap-4 text-black rounded-3xl pb-5 transition-all duration-800 shadow-lg hover:shadow-[blue] hover:border border-blue-700">
+          <from>
+            <div className="flex flex-wrap justify-center gap-4 py-6">
+              <input
+                type="text"
+                className="w-[280px] h-[50px] px-3 rounded-lg outline-none"
+                placeholder="Enter full name..."
+                name="fullName"
+                onChange={changeHanlder}
+                value={fromData.fullName}
+              />
+              <input
+                type="email"
+                className="w-[280px] h-[50px] px-3 rounded-lg outline-none"
+                placeholder="Enter email eddress..."
+                name="email"
+                onChange={changeHanlder}
+                value={fromData.email}
+              />
+              <input
+                type="tel"
+                className="w-[280px] h-[50px] px-3 rounded-lg outline-none"
+                placeholder="Enter mob. No.."
+                name="phone"
+                onChange={changeHanlder}
+                value={fromData.phone}
+              />
+              <input
+                type="text"
+                className="w-[280px] h-[50px] px-3 rounded-lg outline-none"
+                placeholder="Enter email Subject..."
+                name="subject"
+                onChange={changeHanlder}
+                value={fromData.subject}
+              />
+              <textarea
+                row={5}
+                col={10}
+                placeholder="Message...."
+                onresize="none"
+                className="w-[84%] h-[200px] rounded-lg p-3 outline-none"
+                name="message"
+                onChange={changeHanlder}
+                value={fromData.message}
+              ></textarea>
+            </div>
+            <div className="w-[120px] ml-12">
+              <button
+                onClick={submitHandler}
+                className="w-full h-full py-2 px-6 gap-1 text-[1.1rem] font-bold rounded-lg bg-[#c1ffff] text-black"
+              >
+                Submit
+              </button>
+            </div>
+          </from>
         </div>
       </div>
     </div>
