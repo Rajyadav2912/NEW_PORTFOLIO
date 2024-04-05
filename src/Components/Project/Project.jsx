@@ -9,7 +9,7 @@ const Project = () => {
   const pro = Data.Project;
 
   return (
-    <div className="py-[50px]">
+    <div className="pt-[50px]">
       <div className="mx-auto max-w-[740px] text-center">
         <h2 className="h2-heading">
           Work Experience & What I Have Done This Projects

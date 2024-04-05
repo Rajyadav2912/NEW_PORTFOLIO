@@ -53,6 +53,7 @@ const data = {
     email: "rajyadav7047@gmail.com",
     location: "Indore (M.P), 452010",
   },
+
   Project: [
     // 1. title: "My Portfolio",
     {
@@ -211,6 +212,7 @@ const data = {
     {
       id: 1,
       title: "My Portfolio",
+      category: "Javascript",
       date: "Jan 2024 - feb 2024",
       description:
         "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
@@ -241,6 +243,7 @@ const data = {
       id: 2,
       title: "Contact APP with CRUD",
       date: "Jan 2024 - feb 2024",
+      category: "Full Stack",
       description:
         "Developed a Contact App project with CRUD (Create, Read, Update, Delete) functionality. Implemented Firebase as the backend database for data management. Utilized Vite and React.js for core structure and functionality of application",
       image: Contact_APP,
@@ -275,6 +278,7 @@ const data = {
       id: 3,
       title: "Nike Shoes Website",
       date: "Feb 2024 - March 2024",
+      category: "Frontend",
       description:
         "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
       image: Nike_Shoe,
@@ -304,6 +308,7 @@ const data = {
       id: 4,
       title: "Weather Tracking Web App",
       date: "Feb 2024 - March 2024",
+      category: "Javascript",
       description:
         "Created a user-friendly interface using HTML and CSS for smooth experience. Used advanced Js techniques to dynamically update information. Mastered fetch API's integration, combining with Js skills to build an interactive Weather Tracker Web App.",
       image: Weather_Tracker,
@@ -333,6 +338,7 @@ const data = {
       id: 5,
       title: "Razorpay Clone",
       date: "Jan 2024 - Feb 2024",
+      category: "Frontend",
       description:
         "Successfully replicated Razorpay's clone using HTML, CSS, and Tailwind CSS. Ensured a smooth user experience by implementing a responsive website design, making the Razorpay clone accessible across various devices.",
       image: Razorpay_Clone,
@@ -362,6 +368,8 @@ const data = {
       id: 6,
       title: "E-commerce Shopping Website",
       date: "July 2023 - Aug 2024",
+
+      category: "HTML/CSS",
       description:
         "Built an E-commerce shopping website using HTML, CSS, and JavaScript. Implemented a product catalogue, shopping cart, blog site, about, services and checkout process. Made the website responsive for mobile-friendly and any device.",
       image: Cara_E_commerce,
@@ -391,6 +399,7 @@ const data = {
       id: 7,
       title: "Password Generator WebApp",
       date: "Feb 2024 - March 2024",
+      category: "Javascript",
       description:
         "Built a strong Password Generator with HTML, CSS, and JavaScript for reliable and secure password creation. Used javaScript, core concepts like methods, properties, and attributes.",
       image: Password_generator,
@@ -420,6 +429,7 @@ const data = {
       id: 8,
       title: "Basice Portfolio",
       date: "Aug 2023 - Sep 2023",
+      category: "HTML/CSS",
       description:
         "Built a portfolio website to showcase web development skills. Constantly updated website with new projects to track my progress and improve relevant skills. Learned about the importance of design and usability.",
       image: Basic_Portfolio,
@@ -449,6 +459,7 @@ const data = {
       id: 9,
       title: "Client Portfolio Website",
       date: "Aug 2023 - Sep 2023",
+      category: "HTML/CSS",
       description:
         "Designed and developed a professional Portfolio website to showcase skills, projects, and achievements. Created an attractive and user-friendly interface to engage potential employers.",
       image: Client_Portfolio,
@@ -478,6 +489,7 @@ const data = {
       id: 10,
       title: "Spotify Clones Website",
       date: "Aug 2023 - Sep 2023",
+      category: "Javascript",
       description:
         "Developed a responsive music streaming website using HTML, CSS, and JavaScript, replicating the user interface of Spotify. Created a visually appealing and user-friendly design, ensuring seamless navigation and ease of use.",
       image: Spotify_clone,
@@ -507,6 +519,7 @@ const data = {
       id: 11,
       title: "Login Page",
       date: "Aug 2023 - Sep 2023",
+      category: "HTML/CSS",
       description:
         "Our project focuses on creating a user-friendly login page for our website. It provides a secure and streamlined login process, allowing users to access their personalized accounts with ease.",
       image: Login_Page,
@@ -536,6 +549,7 @@ const data = {
       id: 12,
       title: "Registration From",
       date: "Aug 2023 - Sep 2023",
+      category: "HTML/CSS",
       description: "Basic Registration website",
       image: Registration_page,
       link: "",
@@ -586,6 +600,7 @@ const data = {
       standard: "10th | MPBSE",
     },
   ],
+
   Skill: [
     {
       id: 1,

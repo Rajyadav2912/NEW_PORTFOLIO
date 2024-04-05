@@ -15,7 +15,7 @@ const Card = ({ image, title, date, info, weblink, skill, key }) => {
   }
 
   return (
-    <div className="w-[350px] h-full border rounded-3xl flex flex-col justify-center gap-5 p-4">
+    <div className="w-[350px] h-full border rounded-3xl flex flex-col justify-center gap-5 p-4 hover:-translate-y-5 transition-all duration-700">
       <div className="relative">
         <img src={image} alt="" />
         <Link>

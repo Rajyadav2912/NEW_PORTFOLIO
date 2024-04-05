@@ -1,11 +1,13 @@
 import Data from "../data";
 import Card from "../Components/Card/Card";
-// import { useState } from "react";
+import { useState } from "react";
 import Filter from "../Components/Filter/Filter";
+import filterData from "../filter";
+import { Cards } from "../Components/Card/Cards";
 
 const Project = () => {
   const pro = Data.Projects;
-  // const [category, setCategory] = useState([]);
+  const [category, setCategory] = useState(filterData[0].title);
 
   return (
     <div className="py-[90px]">
@@ -17,7 +19,7 @@ const Project = () => {
       </div>
       <div className="page-3">
         <div className="mt-6">
-          <Filter />
+          <Filter category={category} setCategory={setCategory} />
         </div>
         <div className="p-14 pl-[90px] flex flex-wrap gap-8">
           {pro.map((data, index) => (
@@ -30,6 +32,7 @@ const Project = () => {
               link={data.weblink}
               skill={data.skills}
             />
+            // <Cards />
           ))}
         </div>
       </div>

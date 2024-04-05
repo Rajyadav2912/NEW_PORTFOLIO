@@ -1,9 +1,9 @@
 import React from "react";
 import filterData from "../../filter";
 
-const Filter = () => {
-  // let category = props.category;
-  // let setCategory = props.setCategory;
+const Filter = (props) => {
+  let category = props.category;
+  let setCategory = props.setCategory;
 
   // console.log(Data);
 
@@ -13,8 +13,8 @@ const Filter = () => {
 
   return (
     <div
-      className="w-11/12 flex flex-wrap max-w-max space-x-4 gap-y-4 mx-auto 
-    py-4 justify-center border rounded-3xl px-4"
+      className="w-11/12 flex flex-wrap max-w-max space-x-4 gap-x-3 mx-auto 
+    py-3 justify-center border rounded-3xl px-3"
     >
       {/* {filterData.map((data) => {
         return (
@@ -37,9 +37,12 @@ const Filter = () => {
 
       {filterData.map((data) => (
         <button
-          className={`text-lg px-2 rounded-md font-medium
-             text-white bg-black hover:bg-opacity-50
-              transition-all duration-300`}
+          className={`text-lg px-3 rounded-md font-medium
+              bg-black ${
+                category === data.title
+                  ? "bg-[#3ae3ec] p-2 px-4 text-black rounded-full shadow-blue-700"
+                  : "bg-transparent"
+              } transition-all duration-700`}
           key={data.id}
           onClick={() => filterHanlder(data.title)}
         >

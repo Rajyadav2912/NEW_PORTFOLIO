@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import hero from "../Components/Assets/Images/3d-Contact-image.png";
-import Web from "../Components/Assets/Images/web.png";
+import Web from "../Components/Assets/3D ICON/web-development.png";
 import language from "../Components/Assets/3D ICON/language.png";
 // import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="py-[40px]">
+    <div className="py-[70px]">
       <div className="mx-auto max-w-[740px] text-center">
         <h2 className="h2-heading">Get In Touch</h2>
         <h1 className="h1-heading">Contact Me</h1>
@@ -88,7 +88,7 @@ const Contact = () => {
                 col={10}
                 placeholder="Message...."
                 onresize="none"
-                className="w-[84%] h-[200px] rounded-lg p-3 outline-none"
+                className="w-[87%] h-[200px] rounded-lg p-3 outline-none"
                 name="message"
                 onChange={changeHanlder}
                 value={fromData.message}
