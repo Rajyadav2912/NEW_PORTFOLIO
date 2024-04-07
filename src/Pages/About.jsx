@@ -25,6 +25,7 @@ const About = () => {
               loading="lazy"
             />
           </div>
+
           <div className="w-[85%] h-[100%] flex flex-col gap-10 border">
             <div className="flex flex-col gap-5 border">
               <h1 className="text-[2.5rem] flex mx-auto gap-2 font-bold leading-normal">
