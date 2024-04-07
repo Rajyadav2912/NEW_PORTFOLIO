@@ -38,11 +38,11 @@ const Filter = (props) => {
       {filterData.map((data) => (
         <button
           className={`text-lg px-3 rounded-md font-medium
-              bg-black ${
-                category === data.title
-                  ? "bg-[#3ae3ec] p-2 px-4 text-black rounded-full shadow-blue-700"
-                  : "bg-transparent"
-              } transition-all duration-700`}
+               ${
+                 category === data.title
+                   ? "bg-[#3ae3ec] p-2 px-4 text-black rounded-full shadow-blue-700"
+                   : "bg-transparent"
+               } transition-all duration-700`}
           key={data.id}
           onClick={() => filterHanlder(data.title)}
         >

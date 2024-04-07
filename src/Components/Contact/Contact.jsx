@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import hero from "../Components/Assets/Images/3d-Contact-image.png";
-import Web from "../Components/Assets/3D ICON/web-development.png";
-import language from "../Components/Assets/3D ICON/language.png";
+import hero from "../Assets/Images/3d-Contact-image.png";
+import Web from "../Assets/3D ICON/web-development.png";
+import language from "../Assets/3D ICON/language.png";
 // import { Link } from "react-router-dom";
 
 const Contact = () => {
