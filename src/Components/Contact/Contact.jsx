@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import hero from "../Assets/Images/3d-Contact-image.png";
 import Web from "../Assets/3D ICON/web-development.png";
 import language from "../Assets/3D ICON/language.png";
+import Tilt from "../Tilt/Tilt";
 // import { Link } from "react-router-dom";
 
 const Contact = () => {
@@ -36,7 +37,9 @@ const Contact = () => {
       </div>
       <div className="page-4">
         <div className="w-[35%] relative">
-          <img src={hero} alt="" className="relative w-full" />
+          <Tilt>
+            <img src={hero} alt="" className="relative w-full" />
+          </Tilt>
           <img
             src={Web}
             alt=""
@@ -48,8 +51,9 @@ const Contact = () => {
             className="absolute w-[90px] top-[20rem] left-[3rem] rightleft"
           />
         </div>
+
         <div className="w-[45%] flex flex-col gap-4 text-black rounded-3xl pb-5 transition-all duration-800 shadow-lg hover:shadow-[blue] hover:border border-blue-700">
-          <from>
+          <form>
             <div className="flex flex-wrap justify-center gap-4 py-6">
               <input
                 type="text"
@@ -87,7 +91,6 @@ const Contact = () => {
                 row={5}
                 col={10}
                 placeholder="Message...."
-                onresize="none"
                 className="w-[87%] h-[200px] rounded-lg p-3 outline-none"
                 name="message"
                 onChange={changeHanlder}
@@ -102,7 +105,7 @@ const Contact = () => {
                 Submit
               </button>
             </div>
-          </from>
+          </form>
         </div>
       </div>
     </div>

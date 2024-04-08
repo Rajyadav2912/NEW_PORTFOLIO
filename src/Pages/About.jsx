@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import TechStack from "../Components/TechStack/TechStack";
 import GitHubStats from "../Components/GitHubStats/GitHubStats";
 import LinkedInCon from "../Components/LinkedInContainer/LinkedInCon";
+import Tilt from "../Components/Tilt/Tilt";
 
 const About = () => {
   const { title, image, heading, description, email, location } = data.About;
@@ -17,17 +18,19 @@ const About = () => {
       {/* <Abouts /> */}
       <div className="mt-[8rem]">
         <div className="page-2 about">
-          <div className="w-[24rem] h-[30rem]">
-            <img
-              src={image}
-              alt="img"
-              className="w-full h-full rounded-[4rem]"
-              loading="lazy"
-            />
-          </div>
+          <Tilt>
+            <div className="w-[24rem] h-[30rem]">
+              <img
+                src={image}
+                alt="img"
+                className="w-full h-full rounded-[4rem]"
+                loading="lazy"
+              />
+            </div>
+          </Tilt>
 
-          <div className="w-[85%] h-[100%] flex flex-col gap-10 border">
-            <div className="flex flex-col gap-5 border">
+          <div className="w-[85%] h-[100%] flex flex-col gap-10 ">
+            <div className="flex flex-col gap-5">
               <h1 className="text-[2.5rem] flex mx-auto gap-2 font-bold leading-normal">
                 {title}
                 <img
@@ -65,7 +68,7 @@ const About = () => {
             </div>
 
             {/*   💻 Tech Stack:*/}
-            <div className="flex flex-col gap-6 items-start border">
+            <div className="flex flex-col gap-6 items-start ">
               <h1 className="text-[2.5rem] font-bold leading-normal">
                 💻 Tech Stack:
               </h1>
@@ -73,7 +76,7 @@ const About = () => {
             </div>
 
             {/*   📊 GitHub Stats: */}
-            <div className="flex flex-col gap-6 items-start border">
+            <div className="flex flex-col gap-6 items-start ">
               <h1 className="text-[2.5rem] font-bold leading-normal">
                 📊 GitHub Stats:
               </h1>
@@ -81,7 +84,7 @@ const About = () => {
             </div>
 
             {/*  🌐 LinkedIn Profile: */}
-            <div className="flex flex-col gap-6 items-start border">
+            <div className="flex flex-col gap-6 items-start">
               <h1 className="text-[2.5rem] font-bold leading-normal">
                 🌐 LinkedIn Profile:
               </h1>

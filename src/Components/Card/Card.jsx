@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Arrow from "../Assets/Images/arrow.svg";
 import githubIcon from "../Assets/3D ICON/github.png";
+import Tilt from "../Tilt/Tilt";
 
-const Card = ({ image, title, date, info, weblink, skill, key }) => {
+const Card = ({ image, title, date, info, weblink, skill, index }) => {
   const [readmore, setReadMore] = useState(false);
 
   const description = readmore ? info : `${info.substring(0, 130)}....`;
@@ -15,48 +16,53 @@ const Card = ({ image, title, date, info, weblink, skill, key }) => {
   }
 
   return (
-    <div className="w-[350px] h-full border rounded-3xl flex flex-col justify-center gap-5 p-4 hover:-translate-y-5 transition-all duration-700">
-      <div className="relative">
-        <img src={image} alt="" />
-        <Link>
-          <img
-            src={githubIcon}
-            alt=""
-            className="absolute w-[60px] top-0 right-0"
-          />
-        </Link>
+    <Tilt>
+      <div
+        className="w-[350px] h-full border rounded-3xl flex flex-col justify-center gap-5 p-4 hover:-translate-y-5 transition-all duration-700"
+        key={index}
+      >
+        <div className="relative">
+          <img src={image} alt="" />
+          <Link>
+            <img
+              src={githubIcon}
+              alt=""
+              className="absolute w-[60px] top-0 right-0"
+            />
+          </Link>
+        </div>
+        <div className="flex gap-3">
+          {skill.map((skill, index) => (
+            <div className="w-[35px]" key={index}>
+              <img src={skill.image} />
+            </div>
+          ))}
+        </div>
+        <div className="text-[16px] font-bold ">
+          <p>{title}</p>
+          <p>{date}</p>
+        </div>
+        <div>
+          <p className="text-justify">
+            {description}
+            <span
+              className="text-blue-600 cursor-pointer text-[15px]"
+              onClick={readmoreHanlder}
+            >
+              {readmore ? `...show less` : `read more`}
+            </span>
+          </p>
+        </div>
+        <div className="w-[210px] mx-auto">
+          <Link to={weblink}>
+            <button className="w-full flex h-full py-2 px-4 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
+              Go to Web page
+              <img src={Arrow} alt="arrow" loading="lazy" />
+            </button>
+          </Link>
+        </div>
       </div>
-      <div className="flex gap-3">
-        {skill.map((skill) => (
-          <div className="w-[35px]">
-            <img src={skill.image} />
-          </div>
-        ))}
-      </div>
-      <div className="text-[16px] font-bold ">
-        <p>{title}</p>
-        <p>{date}</p>
-      </div>
-      <div>
-        <p className="text-justify">
-          {description}
-          <span
-            className="text-blue-600 cursor-pointer text-[15px]"
-            onClick={readmoreHanlder}
-          >
-            {readmore ? `...show less` : `read more`}
-          </span>
-        </p>
-      </div>
-      <div className="w-[210px] mx-auto">
-        <Link to={weblink}>
-          <button className="w-full flex h-full py-2 px-4 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
-            Go to Web page
-            <img src={Arrow} alt="arrow" loading="lazy" />
-          </button>
-        </Link>
-      </div>
-    </div>
+    </Tilt>
   );
 };
 

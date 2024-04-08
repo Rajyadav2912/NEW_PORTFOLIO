@@ -30,6 +30,7 @@ const Project = () => {
             />
           ))}
         </div>
+
         <div className="w-[155px] mx-auto">
           <Link to="/projects">
             <button className="w-full flex h-full py-2 px-4 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">

@@ -589,7 +589,7 @@ const data = {
       date: "June 2019 - March 2020",
       branch: "",
       image: NBM,
-      standard: "12th (PCM) | MPBSE",
+      standard: "Class: 12th (PCM) | MPBSE",
     },
     {
       id: 3,
@@ -597,7 +597,7 @@ const data = {
       date: "June 2017 - March 2018",
       branch: "",
       image: NBM,
-      standard: "10th | MPBSE",
+      standard: "Class: 10th | MPBSE",
     },
   ],
 

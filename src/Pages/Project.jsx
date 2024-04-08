@@ -3,7 +3,6 @@ import Card from "../Components/Card/Card";
 import { useState } from "react";
 import Filter from "../Components/Filter/Filter";
 import filterData from "../filter";
-import { Cards } from "../Components/Card/Cards";
 
 const Project = () => {
   const pro = Data.Projects;

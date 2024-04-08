@@ -5,20 +5,23 @@ import mail from "../Assets/3D ICON/Gmail.png";
 import Location from "../Assets/3D ICON/location.png";
 import Arrow from "../Assets/Images/arrow.svg";
 import { Link } from "react-router-dom";
+import Tilt from "../Tilt/Tilt.jsx";
 
 const About = () => {
   const { title, image, heading, description, email, location } = data.About;
   return (
     <div id="about" className="h-[40rem]">
       <div className="page-2">
-        <div className="w-[24rem] h-[30rem]">
-          <img
-            src={image}
-            alt="img"
-            className="w-full h-full rounded-[4rem]"
-            loading="lazy"
-          />
-        </div>
+        <Tilt>
+          <div className="w-[24rem] h-[30rem]">
+            <img
+              src={image}
+              alt="img"
+              className="w-full h-full rounded-[4rem]"
+              loading="lazy"
+            />
+          </div>
+        </Tilt>
         <div className="w-[38rem] h-[31.5rem] flex flex-col items-start gap-4">
           <h1 className="text-[2.5rem] flex gap-2 font-bold leading-normal">
             {title}

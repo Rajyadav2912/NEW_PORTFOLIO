@@ -18,10 +18,15 @@ const Cards = () => {
           <VerticalTimelineElement
             contentStyle={{ background: "#1d1836", color: "#fff" }}
             contentArrowStyle={{
-              borderRight: "8px solid  rgb(33, 150, 243)",
+              marginLeft: "1px",
+              borderRight: "20px solid #fff",
             }}
             className="vertical-timeline-element--education font-semibold"
-            iconStyle={{ background: "#1d1836", color: "red" }}
+            iconStyle={{
+              background: "#1d1836",
+              color: "red",
+            }}
+            key={index}
             icon={
               <img
                 src={Student}
@@ -31,7 +36,7 @@ const Cards = () => {
             }
             date={data.date}
           >
-            <div className="w-full h-[25rem] flex flex-col gap-4 text-white">
+            <div className="w-full h-[24rem] flex flex-col gap-4 text-white ">
               <img
                 src={data.image}
                 alt="img"
