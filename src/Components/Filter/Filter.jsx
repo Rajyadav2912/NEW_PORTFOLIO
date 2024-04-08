@@ -37,7 +37,7 @@ const Filter = (props) => {
 
       {filterData.map((data) => (
         <button
-          className={`text-lg px-3 rounded-md font-medium
+          className={`text-lg px-3 rounded-md font-medium 
                ${
                  category === data.title
                    ? "bg-[#3ae3ec] p-2 px-4 text-black rounded-full shadow-blue-700"

@@ -10,12 +10,18 @@ import { FaDownload } from "react-icons/fa6";
 const Content = () => {
   return (
     <div>
-      <h2 className="text-[1.7rem] font-bold leading-normal">Hello, I'm</h2>
-      <h1 className="text-[2.5rem] font-extrabold leading-normal">Raj Yadav</h1>
-      <h2 className="text-[1.7rem] font-bold leading-normal">
-        And I'm a <span className="auto-typing-1">Software Developer</span>
+      <h2 className="text-[3rem] font-black leading-normal">Hello, I'm</h2>
+      <h1
+        className="text-[4.5rem] font-black leading-normal animate-text bg-gradient-to-r
+       from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent"
+      >
+        Raj Yadav
+      </h1>
+      <h2 className="text-[1.9rem] font-black leading-normal">
+        And I'm
+        <span className="auto-typing-1 text-[#f8ce96]"> Software Developer</span>
       </h2>
-      <p className="text-[1rem] font-semibold leading-normal">
+      <p className="text-[1.1rem] font-semibold leading-normal">
         Currently, I'm 4th Year B.Tech(ECE) student from PIEMR at Indore. I am
         passionate about the Software Industry.
       </p>

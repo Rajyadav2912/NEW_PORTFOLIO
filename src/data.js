@@ -46,7 +46,7 @@ import firebase from "./Components/Assets/Projects/Firebase.png";
 const data = {
   About: {
     title: "ABOUT ME ",
-    heading: "Hi, I'm Raj Yadav & I'm Software Developer",
+    heading: "Hi, I'm Raj Yadav & I'm ",
     description:
       "Currently in my 4th year pursuing a B.Tech in Electronics and Communication Engineering at PIEMR, I'm deeply passionate about the Software industry. As an avid learner and a naturally curious individual, I thrive on challenges and am always eager to explore new horizons in my academic and professional journey.",
     image: About_img,

@@ -23,7 +23,7 @@ const About = () => {
           </div>
         </Tilt>
         <div className="w-[38rem] h-[31.5rem] flex flex-col items-start gap-4">
-          <h1 className="text-[2.5rem] flex gap-2 font-bold leading-normal">
+          <h1 className="text-[2.5rem] flex gap-2 font-bold leading-normal about-text">
             {title}
             <img
               src={student}
@@ -34,7 +34,9 @@ const About = () => {
           </h1>
           <h2 className="text-[1.7rem] font-semibold leading-normal">
             {heading}
-            <span className="auto-typing-2"></span>
+            <span className="auto-typing-2 text-[#f8ce96]">
+              Software Developer
+            </span>
           </h2>
           <p className="text-justify leading-normal font-bold text-[1rem]">
             {description}
@@ -44,7 +46,7 @@ const About = () => {
           <div className="flex flex-row items-center mt-3">
             {/* <img src="./3D ICON/Gmail.png" alt="img.png"> */}
             <img src={mail} alt="" className="w-16" loading="lazy" />
-            <p className="pl-2 font-bold text-[1rem]">Mail id : {email}</p>
+            <p className="pl-2 font-bold text-[1rem]  ">Mail id : {email}</p>
           </div>
 
           {/* Location  */}

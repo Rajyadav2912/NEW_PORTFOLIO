@@ -19,60 +19,69 @@ const Footer = () => {
       <div className="page-4 footer">
         <div className="flex w-[80%] h-[300px] justify-around mx-auto">
           <div className="w-[30%] p-5 flex flex-col gap-4">
-            <h1 className="font-extrabold text-[35px]">Raj Yadav</h1>
+            <h1 className="font-extrabold text-[35px] text-orange-400">
+              Raj Yadav
+            </h1>
             <p className="font-bold text-[16px]">
               Thank you for visiting my personal portfolio website. Connect with
               me over socials.
             </p>
             <p className="font-bold text-[16px]">Keep Rising 🚀.</p>
           </div>
+
           <div className="w-[30%] p-5 flex flex-col gap-4">
-            <h1 className="font-extrabold text-[34px]">Direct Link</h1>
+            <h1 className="font-extrabold text-[34px] text-[#9ae341]">
+              Direct Link
+            </h1>
             <div className="flex flex-col gap-2">
               <a
                 href="/"
                 className="flex items-center font-bold text-[16px] gap-2"
               >
-                <IoHome size={18} /> Home
+                <IoHome size={18} color="#9ae341" /> Home
               </a>
               <a
                 href="/aboout"
                 className="flex items-center font-bold text-[16px] gap-2"
               >
-                <FaUser size={18} /> About
+                <FaUser size={18} color="#9ae341" /> About
               </a>
               <a
                 href="/education"
                 className="flex items-center font-bold text-[16px] gap-2"
               >
-                <FaUserGraduate size={18} /> Education
+                <FaUserGraduate size={18} color="#9ae341" /> Education
               </a>
               <a
                 href="/skill"
                 className="flex items-center font-bold text-[16px] gap-2"
               >
-                <FaLaptopCode size={18} /> Skills
+                <FaLaptopCode size={18} color="#9ae341" /> Skills
               </a>
               <a
                 href="/projects"
                 className="flex items-center font-bold text-[16px] gap-2"
               >
-                <AiOutlineFundProjectionScreen size={18} /> Projects
+                <AiOutlineFundProjectionScreen size={18} color="#9ae341" />{" "}
+                Projects
               </a>
             </div>
           </div>
+
           <div className="w-[30%] p-5 flex flex-col gap-4">
-            <h1 className="font-extrabold text-[35px]">Contact Info.</h1>
+            <h1 className="font-extrabold text-[35px] text-[#d650f7]">
+              Contact Info.
+            </h1>
             <p className="flex items-center font-bold text-[16px] gap-4">
-              <FaPhone size={20} />
+              <FaPhone size={20} color="#d650f7" />
               +91 8349-020-828
             </p>
             <p className="flex items-center font-bold text-[16px] gap-4">
-              <IoIosMail size={20} />
+              <IoIosMail size={20} color="#d650f7" />
               rajyadav7047@gmail.com
             </p>
             <p className="flex items-center font-bold text-[16p6] gap-4">
-              <FaMapLocationDot size={20} />
+              <FaMapLocationDot size={20} color="#d650f7" />
               Indore(M.P) - 452010, India
             </p>
             <div className="flex gap-3">

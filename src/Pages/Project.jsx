@@ -14,7 +14,7 @@ const Project = () => {
         <h2 className="h2-heading">
           Work Experience & What I Have Done This Projects
         </h2>
-        <h1 className="h1-heading">My Projects</h1>
+        <h1 className="h1-heading project">My Projects</h1>
       </div>
       <div className="page-3">
         <div className="mt-6">

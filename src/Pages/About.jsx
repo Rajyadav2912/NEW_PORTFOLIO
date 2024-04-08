@@ -20,18 +20,20 @@ const About = () => {
         <div className="page-2 about">
           <Tilt>
             <div className="w-[24rem] h-[30rem]">
-              <img
-                src={image}
-                alt="img"
-                className="w-full h-full rounded-[4rem]"
-                loading="lazy"
-              />
+              <div className="w-[382px] h-[478px] p-[3px] rounded-[69px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
+                <img
+                  src={image}
+                  alt="img"
+                  className="w-full h-full rounded-[4rem]"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </Tilt>
 
           <div className="w-[85%] h-[100%] flex flex-col gap-10 ">
             <div className="flex flex-col gap-5">
-              <h1 className="text-[2.5rem] flex mx-auto gap-2 font-bold leading-normal">
+              <h1 className="text-[2.5rem] flex mx-auto gap-2 font-bold leading-normal about-text">
                 {title}
                 <img
                   src={student}
