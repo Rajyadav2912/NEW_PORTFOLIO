@@ -27,7 +27,7 @@ const NavBar = () => {
   // }, [moon]);
 
   return (
-    <div className="fixed w-[90%] h-[12%] flex items-center justify-between py-3 px-10 z-[9999999] mx-auto bg-black">
+    <div className="fixed w-[90%] h-[12%] flex items-center xl:justify-between xl:gap-0 lg:gap-[10rem] md:gap-[6rem] py-3 lg:px-10 px-6 z-[9999999] mx-auto bg-black">
       <div className="">
         <Link to="/" className="flex items-center justify-center gap-1">
           <div className="relative" onClick={gotoTop}>

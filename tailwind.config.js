@@ -49,9 +49,12 @@ export default {
       },
 
       boxShadow: {
-        card: "0px 0px 21px 5px rgba(238,161,54,0.59)",
+        card: "0px 0px 10px 2px rgba(90, 100, 229, 1)",
       },
     },
   },
   plugins: [],
 };
+
+// background-color: #21D4FD;
+// background-image: ;

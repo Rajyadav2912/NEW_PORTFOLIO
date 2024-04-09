@@ -44,7 +44,9 @@ const About = () => {
               </h1>
               <h2 className="text-[1.7rem] font-semibold leading-normal">
                 {heading}
-                <span className="auto-typing-2"></span>
+                <span className="auto-typing-2 text-[#f8ce96]">
+                  Software Developer
+                </span>
               </h2>
               <p className="text-justify leading-normal font-bold text-[1rem]">
                 {description}
@@ -55,7 +57,7 @@ const About = () => {
                   {/* <img src="./3D ICON/Gmail.png" alt="img.png"> */}
                   <img src={mail} alt="" className="w-16" loading="lazy" />
                   <p className="pl-2 font-bold text-[1rem]">
-                    Mail id : {email}
+                    <span className="text-[#f8ce96] ">Mail id : </span> {email}
                   </p>
                 </div>
 
@@ -63,7 +65,8 @@ const About = () => {
                 <div className="flex flex-row items-center mt-3">
                   <img src={Location} alt="" className="w-16" loading="lazy" />
                   <p className="pl-2 font-bold text-[1rem]">
-                    Location : {location}
+                    <span className="text-[#f8ce96] ">Location :</span>{" "}
+                    {location}
                   </p>
                 </div>
               </div>
@@ -71,8 +74,11 @@ const About = () => {
 
             {/*   💻 Tech Stack:*/}
             <div className="flex flex-col gap-6 items-start ">
-              <h1 className="text-[2.5rem] font-bold leading-normal">
-                💻 Tech Stack:
+              <h1 className="text-[2.5rem] leading-normal">
+                💻
+                <span className="font-[900] animate-text bg-gradient-to-br from-indigo-200 via-cyan-500 to-green-600 bg-clip-text text-transparent">
+                  Tech Stack:
+                </span>
               </h1>
               <TechStack />
             </div>
@@ -80,7 +86,10 @@ const About = () => {
             {/*   📊 GitHub Stats: */}
             <div className="flex flex-col gap-6 items-start ">
               <h1 className="text-[2.5rem] font-bold leading-normal">
-                📊 GitHub Stats:
+                📊
+                <span className="font-[900] animate-text bg-gradient-to-br from-indigo-200 via-cyan-500 to-green-600 bg-clip-text text-transparent">
+                  GitHub Stats:
+                </span>
               </h1>
               <GitHubStats />
             </div>
@@ -88,7 +97,10 @@ const About = () => {
             {/*  🌐 LinkedIn Profile: */}
             <div className="flex flex-col gap-6 items-start">
               <h1 className="text-[2.5rem] font-bold leading-normal">
-                🌐 LinkedIn Profile:
+                🌐
+                <span className="font-[900] animate-text bg-gradient-to-br from-indigo-200 via-cyan-500 to-green-600 bg-clip-text text-transparent">
+                  LinkedIn Profile:
+                </span>
               </h1>
 
               <LinkedInCon />
@@ -96,7 +108,7 @@ const About = () => {
 
             <div className="w-[180px] mx-auto">
               <Link to="/">
-                <button className="w-full flex h-full py-2 px-4 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
+                <button className="w-full flex h-full py-2 px-4 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
                   Go To Home
                   <img src={Arrow} alt="arrow" loading="lazy" />
                 </button>

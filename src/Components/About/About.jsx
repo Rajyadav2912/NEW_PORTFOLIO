@@ -13,13 +13,16 @@ const About = () => {
     <div id="about" className="h-[40rem]">
       <div className="page-2">
         <Tilt>
-          <div className="w-[24rem] h-[30rem]">
-            <img
-              src={image}
-              alt="img"
-              className="w-full h-full rounded-[4rem]"
-              loading="lazy"
-            />
+          <div className="w-[24rem] h-[30rem] rounded-[4rem] animate-text hover:bg-gradient-to-bl from-cyan-600 via-indigo-400 to-green-400 bg-clip- text-transparent hover:shadow-card">
+            <div className="w-full h-full p-[2px]">
+              {/* bg-gradient-to-br from-blue-600 via-purple-600 to-yellow-400 bg-clip- text-transparent  */}
+              <img
+                src={image}
+                alt="img"
+                className="w-full h-full rounded-[4rem]"
+                loading="lazy"
+              />
+            </div>
           </div>
         </Tilt>
         <div className="w-[38rem] h-[31.5rem] flex flex-col items-start gap-4">
@@ -46,13 +49,17 @@ const About = () => {
           <div className="flex flex-row items-center mt-3">
             {/* <img src="./3D ICON/Gmail.png" alt="img.png"> */}
             <img src={mail} alt="" className="w-16" loading="lazy" />
-            <p className="pl-2 font-bold text-[1rem]  ">Mail id : {email}</p>
+            <p className="pl-2 font-bold text-[1rem]  ">
+              <span className="text-[#f8ce96] ">Mail id : </span> {email}
+            </p>
           </div>
 
           {/* Location  */}
           <div className="flex flex-row items-center mt-3">
             <img src={Location} alt="" className="w-16" loading="lazy" />
-            <p className="pl-2 font-bold text-[1rem]">Location : {location}</p>
+            <p className="pl-2 font-bold text-[1rem]">
+              <span className="text-[#f8ce96] ">Location :</span> {location}
+            </p>
           </div>
 
           <div>
