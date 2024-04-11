@@ -10,23 +10,31 @@ import { FaDownload } from "react-icons/fa6";
 const Content = () => {
   return (
     <div>
-      <h2 className="text-[3rem] font-black leading-normal">Hello, I'm</h2>
+      <h2 className="xl:text-[3rem] text-[2.2rem] font-black leading-normal">
+        Hello, I'm
+      </h2>
+
       <h1
-        className="text-[4.5rem] font-black leading-normal animate-text bg-gradient-to-r
+        className="xl:text-[4.5rem] text-[3.8rem] font-black leading-normal animate-text bg-gradient-to-r
        from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent"
       >
         Raj Yadav
       </h1>
-      <h2 className="text-[1.9rem] font-black leading-normal">
+
+      <h2 className="xl:text-[1.9rem] text-[1.8rem] font-black leading-normal">
         And I'm
-        <span className="auto-typing-1 text-[#f8ce96]"> Software Developer</span>
+        <span className="auto-typing-1 text-[#f8ce96]">
+          {" "}
+          Software Developer
+        </span>
       </h2>
-      <p className="text-[1.1rem] font-semibold leading-normal">
+
+      <p className="xl:text-[1.1rem] text-[0.9rem] font-semibold leading-normal">
         Currently, I'm 4th Year B.Tech(ECE) student from PIEMR at Indore. I am
         passionate about the Software Industry.
       </p>
 
-      <div className="flex justify-between mt-4 w-[25rem]">
+      <div className="flex justify-between mt-4 xl:w-[25rem] w-[24rem]">
         <Link
           to="https://www.linkedin.com/in/rajyadav-2920r0218j8/"
           target="_blank"
@@ -50,7 +58,7 @@ const Content = () => {
         </Link>
       </div>
 
-      <button className="w-[10rem] border h-12 text-black text-[1.05rem] font-bold shadow-lg bg-[#c1ffff] rounded-[50px] mt-5">
+      <button className="xl:w-[10rem] w-[9.5rem] border h-12 text-black text-[1.05rem] font-bold shadow-lg bg-[#c1ffff] rounded-[50px] mt-5">
         <Link
           target="_blank"
           rel="noopener noreferrer"

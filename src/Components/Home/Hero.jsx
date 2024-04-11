@@ -16,40 +16,55 @@ const Hero = () => {
           src={Heros}
           alt="img"
           loading="lazy"
-          className="w-[28rem] -mt-[2rem]"
+          className="xl:w-[28rem] w-[25rem] xl:-mt-[2rem] -mt-[0]"
         />
       </Tilt>
-      <div className="absolute top-1">
+      <div className="absolute xl:top-1 top-14">
         <img
           src={React_js}
           alt=""
           loading="lazy"
-          className="w-[4.5rem] topdown"
+          className="xl:w-[4.5rem]  w-[3.8rem] topdown"
         />
       </div>
-      <div className="absolute top-[15rem] -left-[4rem]">
+      <div className="absolute top-[15rem] xl:-left-[4rem] -left-[3.5rem]">
         <img
           src={Express}
           alt=""
           loading="lazy"
-          className="w-[4rem] rightleft "
+          className="xl:w-[4rem] w-[3.4rem] rightleft "
         />
       </div>
-      <div className="absolute top-[28rem] left-12">
-        <img src={DB} alt="" loading="lazy" className="w-[4.5rem] topdown" />
+      <div className="absolute xl:top-[28rem] top-[26rem] xl:left-12 left-10">
+        <img
+          src={DB}
+          alt=""
+          loading="lazy"
+          className="xl:w-[4.5rem] w-[3.8rem] topdown"
+        />
       </div>
-      <div className="absolute top-[25rem] left-[22rem]">
-        <img src={Js} alt="" loading="lazy" className="w-[4.5rem] rightleft" />
+      <div className="absolute xl:top-[25rem] top-[23rem] xl:left-[22rem] left-[17rem]">
+        <img
+          src={Js}
+          alt=""
+          loading="lazy"
+          className="xl:w-[4.5rem] w-[3.4rem] rightleft"
+        />
       </div>
-      <div className="absolute top-[12rem] left-[28rem]">
-        <img src={Java} alt="" loading="lazy" className="w-[4.5rem] topdown " />
+      <div className="absolute xl:top-[12rem] top-[14rem] xl:left-[28rem] left-[22rem]">
+        <img
+          src={Java}
+          alt=""
+          loading="lazy"
+          className="xl:w-[4.5rem] w-[3.6rem] topdown"
+        />
       </div>
-      <div className="absolute top-[2rem] left-[20rem]">
+      <div className="absolute xl:top-[2rem] top-[5rem] xl:left-[20rem] left-[18rem]">
         <img
           src={Node}
           alt=""
           loading="lazy"
-          className="w-[4.5rem] rightleft "
+          className="xl:w-[4.5rem] w-[3.8rem] rightleft "
         />
       </div>
     </div>
