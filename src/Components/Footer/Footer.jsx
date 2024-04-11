@@ -17,19 +17,19 @@ const Footer = () => {
   return (
     <div className="pb-5">
       <div className="page-4 footer">
-        <div className="flex flex-row flex-wrap  xl:w-[80%] w-[90%] lg:h-[300px] h-[580px] justify-around mx-auto">
-          <div className="lg:w-[30%] w-[50%] p-5 flex flex-col gap-4">
+        <div className="flex flex-row flex-wrap  xl:w-[80%] w-[90%] lg:h-[300px] md:h-[580px] h-[800px] justify-around mx-auto">
+          <div className="lg:w-[30%] md:w-[50%] sm:w-[60%] w-[80%] p-5 flex flex-col md:items-start items-center gap-4">
             <h1 className="font-extrabold text-[35px] text-orange-400">
               Raj Yadav
             </h1>
-            <p className="font-bold text-[16px]">
+            <p className="font-bold md:text-start text-center text-[16px]">
               Thank you for visiting my personal portfolio website. Connect with
               me over socials.
             </p>
             <p className="font-bold text-[16px]">Keep Rising 🚀.</p>
           </div>
 
-          <div className="lg:w-[30%] w-[50%] p-5 flex flex-col gap-4">
+          <div className="lg:w-[30%] md:w-[50%] sm:w-[60%] w-[80%] p-5 flex flex-col md:items-start items-center gap-4">
             <h1 className="font-extrabold text-[34px] text-[#9ae341]">
               Direct Link
             </h1>
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="lg:w-[30%] w-[50%] p-5 flex flex-col gap-4">
+          <div className="lg:w-[30%] md:w-[50%] sm:w-[60%] w-[80%] p-5 flex flex-col md:items-start items-center gap-4">
             <h1 className="font-extrabold text-[35px] text-[#d650f7]">
               Contact Info.
             </h1>
@@ -103,7 +103,7 @@ const Footer = () => {
 
         <div className="w-[80%] flex flex-col gap-4 items-center">
           <div className="w-full h-[1px] border"></div>
-          <div className="font-bold text-[18px] flex items-center gap-2">
+          <div className="font-bold sm:text-[18px] text-[15px] flex items-center gap-2">
             <RiCopyrightLine /> Copyright and Designed with 😎 by Raj Yadav
           </div>
         </div>

@@ -13,7 +13,7 @@ const Skill = () => {
       </div>
       <div className="page-1">
         <Tilt>
-          <div className="hover:border border-orange-300  hover:shadow-lg hover:shadow-orange-300 rounded-3xl xl:w-[730px] w-[600px] xl:h-[450px] h-[400px] flex flex-wrap justify-between gap-8 p-6">
+          <div className="hover:border border-orange-300 border hover:shadow-lg hover:shadow-orange-300 rounded-3xl xl:w-[730px] md:w-[600px] sm:w-[540px] w-[460px] xl:h-[450px] md:h-[400px] sm:h-[360px] h-[350px] flex flex-wrap justify-between md:gap-8 gap-4 md:p-6 p-5">
             {skill.map((item, index) => {
               return (
                 <div className="box" key={index}>

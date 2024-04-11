@@ -12,7 +12,7 @@ const Cards = () => {
   const Education = Data.Education;
 
   return (
-    <div className="xl:w-full w-[70%]  h-full mx-auto">
+    <div className="xl:w-full md:w-[70%] sm:w-[90%] w-[85%] h-full mx-auto">
       <VerticalTimeline>
         {Education.map((data, index) => (
           <VerticalTimelineElement

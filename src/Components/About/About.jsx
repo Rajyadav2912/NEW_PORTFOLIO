@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="xl:h-[40rem] lg:h-[38rem] h-[68rem] lg:px-0 px-16"
+      className="xl:h-[40rem] lg:h-[38rem] sm:h-[68rem] h-[66rem] lg:px-0 sm:px-16 px-10"
     >
       <div className="page-2">
         <Tilt>
@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </Tilt>
 
-        <div className="lg:w-[38rem] w-[42rem] h-[31.5rem] flex flex-col items-start xl:gap-4 gap-3 p-2 pt-6">
+        <div className="lg:w-[38rem] md:w-[42rem] sm:w-[34rem] w-[28rem] h-[31.5rem] flex flex-col items-start xl:gap-4 gap-3 p-2 pt-6">
           <h1 className="text-[2.5rem] mx-auto flex gap-2 font-bold leading-normal about-text">
             {title}
             <img
@@ -43,21 +43,26 @@ const About = () => {
             />
           </h1>
 
-          <h2 className="xl:text-[1.7rem] mx-auto text-[1.5rem] font-semibold leading-normal">
+          <h2 className="xl:text-[1.7rem] mx-auto sm:text-[1.5rem] text-[1.2rem] font-semibold leading-normal">
             {heading}
             <span className="auto-typing-2 text-[#f8ce96]">
               Software Developer
             </span>
           </h2>
 
-          <p className="text-justify leading-normal font-bold xl:text-[1rem] text-[0.85rem]">
+          <p className="text-justify leading-normal font-bold xl:text-[1rem] sm:text-[0.85rem] text-[0.7rem]">
             {description}
           </p>
 
           {/* Mail */}
           <div className="flex flex-row items-center mt-3">
             {/* <img src="./3D ICON/Gmail.png" alt="img.png"> */}
-            <img src={mail} alt="" className="xl:w-16 w-14" loading="lazy" />
+            <img
+              src={mail}
+              alt=""
+              className="xl:w-16 sm:w-14 w-12"
+              loading="lazy"
+            />
             <p className="pl-2 font-bold text-[1rem]  ">
               <span className="text-[#f8ce96] ">Mail id : </span> {email}
             </p>
@@ -68,7 +73,7 @@ const About = () => {
             <img
               src={Location}
               alt=""
-              className="xl:w-16 w-14"
+              className="xl:w-16 sm:w-14 w-12"
               loading="lazy"
             />
             <p className="pl-2 font-bold text-[1rem]">
@@ -76,7 +81,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="mt-2 lg:mx-0 mx-auto">
+          <div className="mt-4 lg:mx-0 mx-auto">
             <Link to="/about">
               <button className="w-full flex h-full py-2 xl:px-5 px-4 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
                 Read more
