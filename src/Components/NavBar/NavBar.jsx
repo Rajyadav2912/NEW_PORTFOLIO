@@ -52,7 +52,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="fixed  xl:w-11/12 w-full h-[12%] flex items-center xl:gap-0 justify-between py-3 pl-8 xl:pr-0 lg:pr-16 z-[9999999] mx-auto bg-black">
+    <div className="fixed  xl:w-11/12 w-full h-[12%] flex items-center xl:gap-0 justify-between py-3 pl-8 xl:pr-0 lg:pr-16 pr-10 z-[9999999] mx-auto bg-black">
       <di-v className=" xl:w-[20%] w-[25%]">
         <Link
           to="/"

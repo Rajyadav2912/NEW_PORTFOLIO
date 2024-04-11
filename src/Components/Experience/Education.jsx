@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 const Education = () => {
   return (
-    <div className="py-[50px]">
+    <div className="pb-[50px]">
       <div className="mx-auto max-w-[380px] text-center">
         <h2 className="h2-heading">What I Have Qualification</h2>
         <h1 className="h1-heading education">My Education</h1>

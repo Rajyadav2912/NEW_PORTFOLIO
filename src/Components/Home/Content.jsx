@@ -10,18 +10,18 @@ import { FaDownload } from "react-icons/fa6";
 const Content = () => {
   return (
     <div>
-      <h2 className="xl:text-[3rem] text-[2.2rem] font-black leading-normal">
+      <h2 className="xl:text-[3rem] lg:text-[2.2rem] md:text-[2rem] sm:text-[1.8rem] text-[2.2rem] font-black leading-normal">
         Hello, I'm
       </h2>
 
       <h1
-        className="xl:text-[4.5rem] text-[3.8rem] font-black leading-normal animate-text bg-gradient-to-r
+        className="xl:text-[4.5rem] lg:text-[3.8rem] md:text-[3.6rem] sm:text-[3.5rem] text-[3.7rem] font-black leading-normal animate-text bg-gradient-to-r
        from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent"
       >
         Raj Yadav
       </h1>
 
-      <h2 className="xl:text-[1.9rem] text-[1.8rem] font-black leading-normal">
+      <h2 className="xl:text-[1.9rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.7rem] font-black leading-normal">
         And I'm
         <span className="auto-typing-1 text-[#f8ce96]">
           {" "}
@@ -29,38 +29,59 @@ const Content = () => {
         </span>
       </h2>
 
-      <p className="xl:text-[1.1rem] text-[0.9rem] font-semibold leading-normal">
+      <p className="xl:text-[1.1rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.9rem] mt-2 font-semibold leading-normal">
         Currently, I'm 4th Year B.Tech(ECE) student from PIEMR at Indore. I am
         passionate about the Software Industry.
       </p>
 
-      <div className="flex justify-between mt-4 xl:w-[25rem] w-[24rem]">
+      <div className="flex md:justify-between sm:gap-4 gap-6  mt-4 xl:w-[25rem] w-[24rem]">
         <Link
           to="https://www.linkedin.com/in/rajyadav-2920r0218j8/"
           target="_blank"
         >
-          <img src={Linkedin} alt="linkedin" className="w-[4rem]" />
+          <img
+            src={Linkedin}
+            alt="linkedin"
+            className="xl:w-[4.5rem] md:w-[3.6rem] w-[3.4rem]"
+          />
         </Link>
         <Link to="" target="_blank">
-          <img src={Mail} alt="mail" className="w-[4rem]" />
+          <img
+            src={Mail}
+            alt="mail"
+            className="xl:w-[4.5rem] md:w-[3.6rem] w-[3.4rem]"
+          />
         </Link>
         <Link to="https://github.com/Rajyadav2912" target="_blank">
-          <img src={GitHub} alt="github" className="w-[4rem]" />
+          <img
+            src={GitHub}
+            alt="github"
+            className="xl:w-[4.5rem] md:w-[3.6rem] w-[3.4rem]"
+          />
         </Link>
         <Link
           to="https://www.facebook.com/profile.php?id=1000118515058"
           target="_blank"
         >
-          <img src={Facebook} alt="facebook" className="w-[4rem]" />
+          <img
+            src={Facebook}
+            alt="facebook"
+            className="xl:w-[4.5rem] md:w-[3.6rem] w-[3.4rem]"
+          />
         </Link>
         <Link to="https://www.instagram.com/yadav_raj.29" target="_blank">
-          <img src={Instagram} alt="instagram" className="w-[4rem]" />
+          <img
+            src={Instagram}
+            alt="instagram"
+            className="xl:w-[4.5rem] md:w-[3.6rem] w-[3.4rem]"
+          />
         </Link>
       </div>
 
-      <button className="xl:w-[10rem] w-[9.5rem] border h-12 text-black text-[1.05rem] font-bold shadow-lg bg-[#c1ffff] rounded-[50px] mt-5">
+      <button className="xl:w-[10rem] lg:w-[9.5rem] sm:w-[9rem] w-[10rem] border h-12 text-black lg:text-[1.05rem] text-[1rem] font-bold shadow-lg bg-[#c1ffff] rounded-[50px] mt-5">
         <Link
-          target="_blank"
+          to=""
+          // target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-3"
         >

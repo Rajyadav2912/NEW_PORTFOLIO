@@ -30,7 +30,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="py-[70px]">
+    <div className="py-[50px]">
       <div className="mx-auto max-w-[740px] text-center">
         <h2 className="h2-heading">Get In Touch</h2>
         <h1 className="h1-heading contact">Contact Me</h1>
