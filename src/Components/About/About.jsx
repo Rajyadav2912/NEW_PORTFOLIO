@@ -10,10 +10,16 @@ import Tilt from "../Tilt/Tilt.jsx";
 const About = () => {
   const { title, image, heading, description, email, location } = data.About;
   return (
-    <div id="about" className="h-[40rem]">
+    <div
+      id="about"
+      className="xl:h-[40rem] lg:h-[38rem] h-[68rem] lg:px-0 px-16"
+    >
       <div className="page-2">
         <Tilt>
-          <div className="w-[24rem] h-[30rem] rounded-[4rem] animate-text hover:bg-gradient-to-bl from-cyan-600 via-indigo-400 to-green-400 bg-clip- text-transparent hover:shadow-card">
+          <div
+            className="xl:w-[24rem] w-[22rem] xl:h-[30rem] h-[28rem] rounded-[4rem] animate-text hover:bg-gradient-to-bl from-cyan-600
+           via-indigo-400 to-green-400 bg-clip- text-transparent hover:shadow-card"
+          >
             <div className="w-full h-full p-[2px]">
               {/* bg-gradient-to-br from-blue-600 via-purple-600 to-yellow-400 bg-clip- text-transparent  */}
               <img
@@ -25,8 +31,9 @@ const About = () => {
             </div>
           </div>
         </Tilt>
-        <div className="w-[38rem] h-[31.5rem] flex flex-col items-start gap-4">
-          <h1 className="text-[2.5rem] flex gap-2 font-bold leading-normal about-text">
+
+        <div className="lg:w-[38rem] w-[42rem] h-[31.5rem] flex flex-col items-start xl:gap-4 gap-3 p-2 pt-6">
+          <h1 className="text-[2.5rem] mx-auto flex gap-2 font-bold leading-normal about-text">
             {title}
             <img
               src={student}
@@ -35,20 +42,22 @@ const About = () => {
               className="w-[4rem] rounded-b-2xl -mt-1"
             />
           </h1>
-          <h2 className="text-[1.7rem] font-semibold leading-normal">
+
+          <h2 className="xl:text-[1.7rem] mx-auto text-[1.5rem] font-semibold leading-normal">
             {heading}
             <span className="auto-typing-2 text-[#f8ce96]">
               Software Developer
             </span>
           </h2>
-          <p className="text-justify leading-normal font-bold text-[1rem]">
+
+          <p className="text-justify leading-normal font-bold xl:text-[1rem] text-[0.85rem]">
             {description}
           </p>
 
           {/* Mail */}
           <div className="flex flex-row items-center mt-3">
             {/* <img src="./3D ICON/Gmail.png" alt="img.png"> */}
-            <img src={mail} alt="" className="w-16" loading="lazy" />
+            <img src={mail} alt="" className="xl:w-16 w-14" loading="lazy" />
             <p className="pl-2 font-bold text-[1rem]  ">
               <span className="text-[#f8ce96] ">Mail id : </span> {email}
             </p>
@@ -56,15 +65,20 @@ const About = () => {
 
           {/* Location  */}
           <div className="flex flex-row items-center mt-3">
-            <img src={Location} alt="" className="w-16" loading="lazy" />
+            <img
+              src={Location}
+              alt=""
+              className="xl:w-16 w-14"
+              loading="lazy"
+            />
             <p className="pl-2 font-bold text-[1rem]">
               <span className="text-[#f8ce96] ">Location :</span> {location}
             </p>
           </div>
 
-          <div>
+          <div className="mt-2 lg:mx-0 mx-auto">
             <Link to="/about">
-              <button className="w-full flex h-full py-2 px-5 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
+              <button className="w-full flex h-full py-2 xl:px-5 px-4 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
                 Read more
                 <img src={Arrow} alt="arrow" loading="lazy" />
               </button>

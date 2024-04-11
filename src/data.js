@@ -582,6 +582,7 @@ const data = {
       date: "June 2020 - June 2024 | Pursuing",
       branch: "Branch: Electronic and Communication Engineering",
       image: PIEMR,
+      standard: "Year: 4th / 8th semester  ",
     },
     {
       id: 2,

@@ -17,7 +17,7 @@ const Project = () => {
         <h1 className="h1-heading project">My Projects</h1>
       </div>
       <div className="page-3">
-        <div className="p-16 pl-[90px] flex flex-wrap gap-8">
+        <div className="p-16 pl-[90px] flex flex-wrap justify-center gap-8 lg:mx-0 mx-auto">
           {pro.map((data, index) => (
             <Card
               key={index}

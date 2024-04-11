@@ -9,7 +9,7 @@ const Education = () => {
         <h1 className="h1-heading education">My Education</h1>
       </div>
       <div className="page-3">
-        <div className="p-16">
+        <div className="xl:p-16 p-12">
           <Cards />
         </div>
       </div>

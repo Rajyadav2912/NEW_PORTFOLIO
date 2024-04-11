@@ -7,7 +7,7 @@ import Tilt from "../Tilt/Tilt";
 const Card = ({ image, title, date, info, weblink, skill, index }) => {
   const [readmore, setReadMore] = useState(false);
 
-  const description = readmore ? info : `${info.substring(0, 130)}....`;
+  const description = readmore ? info : `${info.substring(0, 150)}....`;
 
   function readmoreHanlder() {
     console.log("click hua hn");
@@ -43,7 +43,7 @@ const Card = ({ image, title, date, info, weblink, skill, index }) => {
           <p>{date}</p>
         </div>
         <div>
-          <p className="text-justify">
+          <p className="text-justify text-[14px]">
             {description}
             <span
               className="text-blue-600 cursor-pointer text-[15px]"
