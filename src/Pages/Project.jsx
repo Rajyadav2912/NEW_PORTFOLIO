@@ -16,11 +16,11 @@ const Project = () => {
         </h2>
         <h1 className="h1-heading project">My Projects</h1>
       </div>
-      <div className="page-3">
+      <div className="page-3 pro-page3">
         <div className="mt-6">
           <Filter category={category} setCategory={setCategory} />
         </div>
-        <div className="p-14 pl-[90px] flex flex-wrap gap-8">
+        <div className="lg:p-14 p-10 lg:pl-[90px] md:pl-[60px] pl-[40px] flex flex-wrap items-center justify-center gap-8">
           {pro.map((data, index) => (
             <Card
               key={index}

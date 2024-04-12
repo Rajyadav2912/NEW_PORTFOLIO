@@ -59,7 +59,7 @@ const NavBar = () => {
 
   return (
     <div className="fixed xl:w-11/12 w-full h-[12%] flex items-center xl:gap-0 justify-between py-3 pl-4 xl:pr-0 lg:pr-16 pr-8 z-[9999999] mx-auto bg-black">
-      <div className=" xl:w-[20%] w-[60%]">
+      <div className=" xl:w-[20%] md:w-[30%] w-[60%]">
         <Link
           to="/"
           className="flex items-center justify-center xl:gap-1 gap-0"

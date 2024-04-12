@@ -13,8 +13,8 @@ const Filter = (props) => {
 
   return (
     <div
-      className="w-11/12 flex flex-wrap max-w-max space-x-4 gap-x-3 mx-auto 
-    py-3 justify-center border rounded-3xl px-3"
+      className="md:w-11/12 w-[90%] flex flex-wrap max-w-max space-x-4 md:gap-x-3 gap-x-1 mx-auto 
+    py-3 justify-center border rounded-3xl md:px-3 px-1"
     >
       {/* {filterData.map((data) => {
         return (
