@@ -8,7 +8,7 @@ import Project from "../Components/Project/Project";
 
 const Main = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-12">
       {/* <StarsCanvas /> */}
       <Home />
       <About />

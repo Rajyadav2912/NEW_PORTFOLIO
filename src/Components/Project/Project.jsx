@@ -10,14 +10,14 @@ const Project = () => {
 
   return (
     <div className="pt-[50px]">
-      <div className="mx-auto md:max-w-[740px] sm:max-w-[630px] max-w-[460px] text-center">
+      <div className="mx-auto md:max-w-[740px] sm:max-w-[630px] max-w-[380px] text-center">
         <h2 className="h2-heading">
           Work Experience & What I Have Done This Projects
         </h2>
         <h1 className="h1-heading project">My Projects</h1>
       </div>
       <div className="page-3">
-        <div className="md:p-16 p-10 md:pl-[90px] pl-[60px] flex flex-wrap justify-center gap-8 lg:mx-0 mx-auto">
+        <div className="md:p-16 p-10 md:pl-[90px] sm:pl-[60px] pl-[40px] flex flex-wrap justify-center gap-8 lg:mx-0 mx-auto">
           {pro.map((data, index) => (
             <Card
               key={index}

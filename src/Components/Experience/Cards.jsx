@@ -12,7 +12,7 @@ const Cards = () => {
   const Education = Data.Education;
 
   return (
-    <div className="xl:w-full md:w-[70%] sm:w-[90%] w-[85%] h-full mx-auto">
+    <div className="xl:w-full md:w-[70%] sm:w-[90%] w-[96%] h-full mx-auto">
       <VerticalTimeline>
         {Education.map((data, index) => (
           <VerticalTimelineElement
@@ -36,16 +36,22 @@ const Cards = () => {
             }
             date={data.date}
           >
-            <div className="w-full h-[24rem] flex flex-col gap-4 text-white ">
+            <div className="w-full h-[24rem] flex flex-col md:gap-4 gap-3 text-white ">
               <img
                 src={data.image}
                 alt="img"
                 className="w-[30rem] mx-auto rounded-none"
                 loading="lazy"
               />
-              <h1 className="text-[17px] font-bold">{data.name}</h1>
-              <h3 className="text-[15px] font-semibold">{data.standard}</h3>
-              <h3 className="text-[15px] font-semibold">{data.branch}</h3>
+              <h1 className="sm:text-[17px] text-[15px] font-bold">
+                {data.name}
+              </h1>
+              <h3 className="sm:text-[17px] text-[15px] font-semibold">
+                {data.standard}
+              </h3>
+              <h3 className="sm:text-[17px] text-[15px] font-semibold">
+                {data.branch}
+              </h3>
             </div>
           </VerticalTimelineElement>
         ))}

@@ -12,12 +12,12 @@ const About = () => {
   return (
     <div
       id="about"
-      className="xl:h-[40rem] lg:h-[38rem] sm:h-[68rem] h-[66rem] lg:px-0 sm:px-16 px-10"
+      className="xl:h-[40rem] lg:h-[38rem] sm:h-[68rem] h-[62rem] lg:px-0 sm:px-16 px-4"
     >
       <div className="page-2">
         <Tilt>
           <div
-            className="xl:w-[24rem] w-[22rem] xl:h-[30rem] h-[28rem] rounded-[4rem] animate-text hover:bg-gradient-to-bl from-cyan-600
+            className="xl:w-[24rem] md:w-[22rem] w-[20rem] xl:h-[30rem] md:h-[28rem] h-[26rem] rounded-[4rem] animate-text hover:bg-gradient-to-bl from-cyan-600
            via-indigo-400 to-green-400 bg-clip- text-transparent hover:shadow-card"
           >
             <div className="w-full h-full p-[2px]">
@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </Tilt>
 
-        <div className="lg:w-[38rem] md:w-[42rem] sm:w-[34rem] w-[28rem] h-[31.5rem] flex flex-col items-start xl:gap-4 gap-3 p-2 pt-6">
+        <div className="lg:w-[38rem] md:w-[42rem] sm:w-[34rem] w-[23.5rem] h-[31.5rem] flex flex-col items-start xl:gap-4 gap-3 p-2 pt-6">
           <h1 className="text-[2.5rem] mx-auto flex gap-2 font-bold leading-normal about-text">
             {title}
             <img
@@ -43,7 +43,7 @@ const About = () => {
             />
           </h1>
 
-          <h2 className="xl:text-[1.7rem] mx-auto sm:text-[1.5rem] text-[1.2rem] font-semibold leading-normal">
+          <h2 className="xl:text-[1.7rem] mx-auto sm:text-[1.5rem] text-[1.05rem] font-semibold leading-normal">
             {heading}
             <span className="auto-typing-2 text-[#f8ce96]">
               Software Developer

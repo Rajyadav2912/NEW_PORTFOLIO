@@ -36,7 +36,7 @@ const Contact = () => {
         <h1 className="h1-heading contact">Contact Me</h1>
       </div>
       <div className="page-4">
-        <div className="xl:w-[35%] lg:w-[45%] md:w-[55%] w-[90%] relative">
+        <div className="xl:w-[35%] lg:w-[45%] md:w-[55%] sm:w-[90%] w-[100%] relative">
           <Tilt>
             <img src={hero} alt="" className="relative w-full" />
           </Tilt>
@@ -52,15 +52,15 @@ const Contact = () => {
           />
         </div>
 
-        <div className="xl:w-[45%] lg:w-[56%] md:w-[70%] w-[80%]">
+        <div className="xl:w-[45%] lg:w-[56%] md:w-[70%] sm:w-[90%] w-[100%]">
           <Tilt>
             <div className="text-black rounded-3xl p-[1px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
               <div className="flex rounded-3xl items-center justify-center flex-col pb-3 bg-black">
-                <form>
+                <form className="flex flex-col sm:items-start items-center">
                   <div className="flex flex-wrap justify-center xl:gap-4 gap-3 py-6">
                     <input
                       type="text"
-                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[380px] xl:h-[50px] h-[45px] px-3 rounded-lg outline-none"
+                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[340px] xl:h-[50px] h-[45px] px-3 rounded-lg outline-none"
                       placeholder="Enter full name..."
                       name="fullName"
                       onChange={changeHanlder}
@@ -69,7 +69,7 @@ const Contact = () => {
 
                     <input
                       type="email"
-                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[380px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
                       placeholder="Enter email eddress..."
                       name="email"
                       onChange={changeHanlder}
@@ -78,7 +78,7 @@ const Contact = () => {
 
                     <input
                       type="tel"
-                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[380px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
                       placeholder="Enter mob. No.."
                       name="phone"
                       onChange={changeHanlder}
@@ -87,7 +87,7 @@ const Contact = () => {
 
                     <input
                       type="text"
-                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[380px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
                       placeholder="Enter email Subject..."
                       name="subject"
                       onChange={changeHanlder}
@@ -98,7 +98,7 @@ const Contact = () => {
                       row={5}
                       col={10}
                       placeholder="Message...."
-                      className="xl:w-[87%]  md:w-[96%] sm:w-[94%] w-[96%] md:h-[200px] sm:h-[180px] h-[170px] rounded-lg p-3 outline-none"
+                      className="xl:w-[87%]  md:w-[96%] sm:w-[94%] w-[87%] md:h-[200px] sm:h-[180px] h-[170px] rounded-lg p-3 outline-none"
                       name="message"
                       onChange={changeHanlder}
                       value={fromData.message}

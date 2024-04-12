@@ -14,7 +14,7 @@ const About = () => {
   const { title, image, heading, description, email, location } = data.About;
 
   return (
-    <div className="flex justify-center items-center text-center">
+    <div className="flex justify-center items-center text-center" id="about">
       {/* <Abouts /> */}
       <div className="mt-[8rem]">
         <div className="page-2 about">

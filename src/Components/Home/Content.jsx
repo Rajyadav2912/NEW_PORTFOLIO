@@ -21,7 +21,7 @@ const Content = () => {
         Raj Yadav
       </h1>
 
-      <h2 className="xl:text-[1.9rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.7rem] font-black leading-normal">
+      <h2 className="xl:text-[1.9rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.4rem] font-black leading-normal">
         And I'm
         <span className="auto-typing-1 text-[#f8ce96]">
           {" "}
@@ -29,12 +29,12 @@ const Content = () => {
         </span>
       </h2>
 
-      <p className="xl:text-[1.1rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.9rem] mt-2 font-semibold leading-normal">
+      <p className="xl:text-[1.1rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.85rem] mt-2 font-semibold leading-normal">
         Currently, I'm 4th Year B.Tech(ECE) student from PIEMR at Indore. I am
         passionate about the Software Industry.
       </p>
 
-      <div className="flex md:justify-between sm:gap-4 gap-6  mt-4 xl:w-[25rem] w-[24rem]">
+      <div className="flex md:justify-between sm:gap-4 gap-2  mt-4 xl:w-[25rem] w-[24rem]">
         <Link
           to="https://www.linkedin.com/in/rajyadav-2920r0218j8/"
           target="_blank"
