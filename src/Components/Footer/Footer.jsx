@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className="pb-5">
       <div className="page-4 footer">
-        <div className="flex flex-row flex-wrap  xl:w-[100%] sm:w-[90%] w-[100%] lg:h-[300px] md:h-[580px] h-[800px] justify-around mx-auto">
+        <div className="flex flex-row flex-wrap  xl:w-[90%] w-[100%] lg:h-[300px] md:h-[580px] h-[800px] justify-around mx-auto">
           <div className="lg:w-[30%] md:w-[50%] sm:w-[60%] w-[100%] p-5 flex flex-col md:items-start items-center gap-4">
             <h1 className="font-extrabold text-[35px] text-orange-400">
               Raj Yadav
@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="sm:w-[100%] w-[80%] flex flex-col gap-4 items-center">
+        <div className="w-[90%] flex flex-col gap-4 items-center">
           <div className="w-full h-[1px] border"></div>
           <div className="font-bold sm:text-[18px] text-[11px] flex items-center gap-2">
             <RiCopyrightLine /> Copyright and Designed with 😎 by Raj Yadav

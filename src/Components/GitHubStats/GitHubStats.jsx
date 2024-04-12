@@ -4,14 +4,14 @@ import Tilt from "../Tilt/Tilt";
 
 const GitHubStats = () => {
   return (
-    <div className="flex w-full h-full gap-12">
+    <div className="flex lg:flex-row flex-col items-center w-full h-full gap-12">
       {/* <Tilt></Tilt> */}
-      <div className="w-[55%]">
+      <div className="lg:w-[55%] md:w-[75%] sm:w-[90%] w-full">
         <Tilt>
           <img src={Model} alt="" className="w-[80%] mx-auto" />
         </Tilt>
       </div>
-      <div className="w-[50%] p-4 flex flex-col gap-5">
+      <div className="lg:w-[55%] md:w-[70%] sm:w-[90%] w-full p-4 flex flex-col gap-5">
         <a href="#">
           <Tilt>
             <img

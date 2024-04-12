@@ -15,28 +15,27 @@ import { BsArrowUp } from "react-icons/bs";
 const App = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 300) {
-      setShowBackToTop(true);
-    } else {
-      setShowBackToTop(false);
-    }
-  };
-
   // console.log(window.scrollY);
 
   useEffect(() => {
-    handleScroll();
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [showBackToTop]);
 
   const handleBackToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo(0, 0);
+    console.log("call scroll");
   };
 
   return (
@@ -54,7 +53,7 @@ const App = () => {
       </Routes>
       {showBackToTop && (
         <button
-          className="fixed border bottom-4 right-4 p-2 bg-white cursor-pointer backToTop"
+          className="fixed z-[9999999] border bottom-4 right-4 p-2 bg-white cursor-pointer backToTop"
           onClick={handleBackToTop}
         >
           <BsArrowUp />

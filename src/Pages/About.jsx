@@ -19,8 +19,8 @@ const About = () => {
       <div className="mt-[8rem]">
         <div className="page-2 about">
           <Tilt>
-            <div className="w-[24rem] h-[30rem]">
-              <div className="w-[382px] h-[478px] p-[3px] rounded-[69px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
+            <div className="md:w-[24rem] sm:w-[22rem] w-[20rem] md:h-[30rem] h-[29rem]">
+              <div className="md:w-[382px] sm:w-[350px] w-[318px] md:h-[478px] sm:h-[462px] h-[460px] p-[3px] rounded-[69px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
                 <img
                   src={image}
                   alt="img"
@@ -31,7 +31,7 @@ const About = () => {
             </div>
           </Tilt>
 
-          <div className="w-[85%] h-[100%] flex flex-col gap-10 ">
+          <div className="lg:w-[85%] w-[90%] h-[100%] flex flex-col gap-10 ">
             <div className="flex flex-col gap-5">
               <h1 className="text-[2.5rem] flex mx-auto gap-2 font-bold leading-normal about-text">
                 {title}
@@ -42,21 +42,23 @@ const About = () => {
                   className="w-[4rem] rounded-b-2xl -mt-1"
                 />
               </h1>
-              <h2 className="text-[1.7rem] font-semibold leading-normal">
+              <h2 className="sm:text-[1.7rem] text-[1rem] font-semibold leading-normal">
                 {heading}
                 <span className="auto-typing-2 text-[#f8ce96]">
                   Software Developer
                 </span>
               </h2>
-              <p className="text-justify leading-normal font-bold text-[1rem]">
+
+              <p className="text-justify leading-normal font-bold md:text-[1rem] sm:text-[.9rem] text-[.7rem]">
                 {description}
               </p>
-              <div className="flex mx-auto gap-[10rem] ">
+
+              <div className="flex md:flex-row flex-col md:mx-auto lg:gap-[10rem] md:gap-[4rem] gap-[2rem] ">
                 {/* Mail */}
                 <div className="flex flex-row items-center mt-3">
                   {/* <img src="./3D ICON/Gmail.png" alt="img.png"> */}
                   <img src={mail} alt="" className="w-16" loading="lazy" />
-                  <p className="pl-2 font-bold text-[1rem]">
+                  <p className="pl-2 font-bold md:text-[1rem] text-[.9rem]">
                     <span className="text-[#f8ce96] ">Mail id : </span> {email}
                   </p>
                 </div>
@@ -64,7 +66,7 @@ const About = () => {
                 {/* Location  */}
                 <div className="flex flex-row items-center mt-3">
                   <img src={Location} alt="" className="w-16" loading="lazy" />
-                  <p className="pl-2 font-bold text-[1rem]">
+                  <p className="pl-2 font-bold md:text-[1rem] text-[.9rem]">
                     <span className="text-[#f8ce96] ">Location :</span>{" "}
                     {location}
                   </p>
@@ -85,7 +87,7 @@ const About = () => {
 
             {/*   📊 GitHub Stats: */}
             <div className="flex flex-col gap-6 items-start ">
-              <h1 className="text-[2.5rem] font-bold leading-normal">
+              <h1 className="md:text-[2.5rem] text-[2rem] font-bold leading-normal">
                 📊
                 <span className="font-[900] animate-text bg-gradient-to-br from-indigo-200 via-cyan-500 to-green-600 bg-clip-text text-transparent">
                   GitHub Stats:
@@ -96,7 +98,7 @@ const About = () => {
 
             {/*  🌐 LinkedIn Profile: */}
             <div className="flex flex-col gap-6 items-start">
-              <h1 className="text-[2.5rem] font-bold leading-normal">
+              <h1 className="md:text-[2.5rem] text-[2rem] font-bold leading-normal">
                 🌐
                 <span className="font-[900] animate-text bg-gradient-to-br from-indigo-200 via-cyan-500 to-green-600 bg-clip-text text-transparent">
                   LinkedIn Profile:
