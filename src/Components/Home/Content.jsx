@@ -45,7 +45,7 @@ const Content = () => {
             className="xl:w-[4.5rem] md:w-[3.6rem] w-[3.4rem]"
           />
         </Link>
-        <Link to="" target="_blank">
+        <Link to="#">
           <img
             src={Mail}
             alt="mail"

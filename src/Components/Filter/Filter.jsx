@@ -1,50 +1,32 @@
 import React from "react";
-import filterData from "../../filter";
 
 const Filter = (props) => {
   let category = props.category;
   let setCategory = props.setCategory;
+  let filterData = props.filterData;
 
   // console.log(Data);
 
   function filterHanlder(title) {
     setCategory(title);
+    console.log(title);
   }
 
   return (
     <div
-      className="md:w-11/12 w-[90%] flex flex-wrap max-w-max space-x-4 md:gap-x-3 gap-x-1 mx-auto 
+      className="md:w-11/12 w-[94%] flex flex-wrap lg:max-w-[55%] md:max-w-[75%] sm:max-w-[95%] max-w-[85%] space-x-4 md:gap-x-3 gap-x-1 gap-y-3 mx-auto 
     py-3 justify-center border rounded-3xl md:px-3 px-1"
     >
-      {/* {filterData.map((data) => {
-        return (
-          <button
-            className={`text-lg px-2 rounded-md font-medium
-             text-white bg-black hover:bg-opacity-50 border-2 
-              transition-all duration-300
-          ${
-            category === data.title
-              ? "bg-[#47fa27] bg-opacity-60 border-white"
-              : "bg-opacity border-transparent"
-          }`}
-            key={data.id}
-            onClick={() => filterHanlder(data.title)}
-          >
-            {data.title}
-          </button>
-        );
-      })} */}
-
       {filterData.map((data) => (
         <button
-          className={`text-lg px-3 rounded-md font-medium 
+          className={`text-lg lg:px-3 px-1 rounded-md font-medium 
                ${
-                 category === data.title
+                 category === data.type
                    ? "bg-[#3ae3ec] p-2 px-4 text-black rounded-full shadow-blue-700"
                    : "bg-transparent"
                } transition-all duration-700`}
           key={data.id}
-          onClick={() => filterHanlder(data.title)}
+          onClick={() => filterHanlder(data.type)}
         >
           {data.title}
         </button>

@@ -33,7 +33,7 @@ const About = () => {
         </Tilt>
 
         <div className="lg:w-[38rem] md:w-[42rem] sm:w-[34rem] w-[23.5rem] h-[31.5rem] flex flex-col items-start xl:gap-4 gap-3 p-2 pt-6">
-          <h1 className="text-[2.5rem] mx-auto flex gap-2 font-bold leading-normal about-text">
+          <h1 className="text-[2.5rem] lg:mx-0 mx-auto flex gap-2 font-bold leading-normal about-text">
             {title}
             <img
               src={student}

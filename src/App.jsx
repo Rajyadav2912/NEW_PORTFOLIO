@@ -42,10 +42,10 @@ const App = () => {
     <div className="w-screen h-screen mx-auto overflow-x-hidden bg-black text-white">
       <ScrollToTop />
       <div className="relative flex justify-center mx-auto">
-        <NavBar />
+        <NavBar onClick={window.scrollTo(0, 0)} />
       </div>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Main onClick={window.scrollTo(0, 0)} />} />
         <Route path="/about" element={<About />} />
         <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Project />} />
