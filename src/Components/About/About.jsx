@@ -6,6 +6,7 @@ import Location from "../Assets/3D ICON/location.png";
 import Arrow from "../Assets/Images/arrow.svg";
 import { Link } from "react-router-dom";
 import Tilt from "../Tilt/Tilt.jsx";
+import ALLButton from "../Button/ALLButton.jsx";
 
 const About = () => {
   const { title, image, heading, description, email, location } = data.About;
@@ -81,13 +82,19 @@ const About = () => {
             </p>
           </div>
 
-          <div className="mt-4 lg:mx-0 mx-auto">
-            <Link to="/about">
+          <div className="lg:mx-0 mx-auto">
+            <ALLButton
+              text={"Read more"}
+              linkto={"/about"}
+              icon={<img src={Arrow} alt="arrow" loading="lazy" />}
+            />
+
+            {/* <Link to="/about">
               <button className="w-full flex h-full py-2 xl:px-5 px-4 gap-1 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
                 Read more
                 <img src={Arrow} alt="arrow" loading="lazy" />
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

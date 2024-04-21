@@ -2,17 +2,17 @@ import React from "react";
 import Card from "../Card/Card";
 
 const ALLProject = ({ proData, category }) => {
-  const allProject = [];
+  // const allProject = [];
 
-  for (let i = 0; i < proData.length; i++) {
-    allProject.push(proData[i]);
-  }
+  // for (let i = 0; i < proData.length; i++) {
+  //   allProject.push(proData[i]);
+  // }
 
-  console.log(allProject);
+  // console.log(allProject);
 
   return (
-    <div>
-      {allProject.map(
+    <div className="lg:py-14 p-2 flex flex-wrap items-center justify-center gap-9">
+      {proData.map(
         (data, index) => (
           // console.log(data)
           <Card

@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Filter = (props) => {
   let category = props.category;
   let setCategory = props.setCategory;
   let filterData = props.filterData;
+  let filterItems = props.filterItems;
 
   // console.log(Data);
 
   function filterHanlder(title) {
     setCategory(title);
+    // filterItems(title);
     console.log(title);
   }
+  // useEffect(() => {}, []);
 
   return (
     <div

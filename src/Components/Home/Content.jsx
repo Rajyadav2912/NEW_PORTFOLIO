@@ -6,6 +6,8 @@ import GitHub from "../Assets/3D ICON/github.png";
 import Facebook from "../Assets/3D ICON/Facebook.png";
 import Instagram from "../Assets/3D ICON/Instagram.png";
 import { FaDownload } from "react-icons/fa6";
+import ALLButton from "../Button/ALLButton";
+import resume from "/src/Raj_Yadav_Resume.pdf";
 
 const Content = () => {
   return (
@@ -13,14 +15,12 @@ const Content = () => {
       <h2 className="xl:text-[3rem] lg:text-[2.2rem] md:text-[2rem] sm:text-[1.8rem] text-[2.2rem] font-black leading-normal">
         Hello, I'm
       </h2>
-
       <h1
         className="xl:text-[4.5rem] lg:text-[3.8rem] md:text-[3.6rem] sm:text-[3.5rem] text-[3.7rem] font-black leading-normal animate-text bg-gradient-to-r
        from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent"
       >
         Raj Yadav
       </h1>
-
       <h2 className="xl:text-[1.9rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.4rem] font-black leading-normal">
         And I'm
         <span className="auto-typing-1 text-[#f8ce96]">
@@ -28,12 +28,10 @@ const Content = () => {
           Software Developer
         </span>
       </h2>
-
       <p className="xl:text-[1.1rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.85rem] mt-2 font-semibold leading-normal">
         Currently, I'm 4th Year B.Tech(ECE) student from PIEMR at Indore. I am
         passionate about the Software Industry.
       </p>
-
       <div className="flex md:justify-between sm:gap-4 gap-2  mt-4 xl:w-[25rem] w-[24rem]">
         <Link
           to="https://www.linkedin.com/in/rajyadav-2920r0218j8/"
@@ -78,7 +76,14 @@ const Content = () => {
         </Link>
       </div>
 
-      <button className="xl:w-[10rem] lg:w-[9.5rem] sm:w-[9rem] w-[10rem] border h-12 text-black lg:text-[1.05rem] text-[1rem] font-bold shadow-lg bg-[#c1ffff] rounded-[50px] mt-5">
+      <ALLButton
+        text={"Download"}
+        page={"_blank"}
+        linkto={resume}
+        icon={<FaDownload />}
+      />
+
+      {/* <button className="xl:w-[10rem] lg:w-[9.5rem] sm:w-[9rem] w-[10rem] border h-12 text-black lg:text-[1.05rem] text-[1rem] font-bold shadow-lg bg-[#c1ffff] rounded-[50px] mt-5">
         <Link
           to=""
           // target="_blank"
@@ -88,7 +93,7 @@ const Content = () => {
           Download
           <FaDownload />
         </Link>
-      </button>
+      </button> */}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Data from "../../data";
 // import { Link } from "react-router-dom";
 import Card from "../Card/Card";
 import Arrow from "../Assets/Images/arrow.svg";
+import ALLButton from "../Button/ALLButton";
 
 const Project = () => {
   const pro = Data.Project;
@@ -31,13 +32,18 @@ const Project = () => {
           ))}
         </div>
 
-        <div className="w-[155px] mx-auto">
-          <Link to="/projects">
+        <div className="w-[165px] mx-auto">
+          <ALLButton
+            text={"See More"}
+            linkto={"/projects"}
+            icon={<img src={Arrow} alt="arrow" loading="lazy" />}
+          />
+          {/* <Link to="/projects">
             <button className="w-full flex h-full py-2 px-4  text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
               See More
               <img src={Arrow} alt="arrow" loading="lazy" />
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

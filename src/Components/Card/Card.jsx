@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Arrow from "../Assets/Images/arrow.svg";
 import githubIcon from "../Assets/3D ICON/github.png";
 import Tilt from "../Tilt/Tilt";
+import ALLButton from "../Button/ALLButton";
 
 const Card = ({ image, title, date, info, weblink, skill, index }) => {
   const [readmore, setReadMore] = useState(false);
@@ -53,13 +54,18 @@ const Card = ({ image, title, date, info, weblink, skill, index }) => {
             </span>
           </p>
         </div>
-        <div className="w-[210px] mx-auto">
-          <Link to={weblink}>
+        <div className="w-[225px] mx-auto">
+          <ALLButton
+            text={"Go to Web page"}
+            linkto={weblink}
+            icon={<img src={Arrow} alt="arrow" loading="lazy" />}
+          />
+          {/* <Link to={weblink}>
             <button className="w-full flex h-full py-2 px-3 text-[1.1rem] font-bold rounded-[15rem] bg-[#c1ffff] text-black">
               Go to Web page
               <img src={Arrow} alt="arrow" loading="lazy" />
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </Tilt>

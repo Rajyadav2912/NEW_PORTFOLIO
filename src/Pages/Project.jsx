@@ -10,7 +10,16 @@ const Project = () => {
   const [proData, setProData] = useState(Data.Projects);
 
   const [category, setCategory] = useState(filterData[0].title);
-  const allProject = [];
+  //  const [category, setCategory] = useState(Data.Project.category)
+  // console.log(category);
+
+  // const filterItems = (category) => {
+  //   const Items = proData.filter((val) => val.category === category);
+  //   setProData(Items);
+  //   console.log(Items);
+  // };
+
+
 
   return (
     <div className="py-[90px]">
@@ -24,12 +33,16 @@ const Project = () => {
         <div className="mt-6">
           <Filter
             filterData={filterData}
+            // filterItems={filterItems}
             category={category}
             setCategory={setCategory}
           />
         </div>
-        <div className="lg:p-14 p-10 lg:pl-[90px] md:pl-[60px] pl-[40px] flex flex-wrap items-center justify-center gap-8">
-          {proData.map(
+
+        {/* <div className="lg:p-14 p-10 lg:pl-[75px] md:pl-[60px] pl-[40px] flex flex-wrap items-center justify-center gap-8"> */}
+        <ALLProject proData={proData} category={category} />
+
+        {/* {proData.map(
             (data, index) => (
               // console.log(data)
               <Card
@@ -40,12 +53,12 @@ const Project = () => {
                 info={data.description}
                 link={data.weblink}
                 skill={data.skills}
+                category={category}
               />
             )
             // <Cards />
-          )}
-          {/* <ALLProject proData={proData} category={category} /> */}
-        </div>
+          )} */}
+        {/* </div> */}
       </div>
     </div>
   );
