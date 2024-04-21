@@ -405,6 +405,11 @@ code {
     padding: 2rem 0;
     border-radius: 10rem;
   }
+
+  .background {
+    width: 20.69rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+  }
 }
 
 @media (max-width: 640px) {
@@ -432,7 +437,7 @@ code {
 
   .page-4 {
     width: 88%;
-    height: 64rem;
+    height: 68rem;
     gap: 0;
   }
 

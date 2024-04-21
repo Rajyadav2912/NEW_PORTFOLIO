@@ -60,7 +60,7 @@ const Contact = () => {
                   <div className="flex flex-wrap justify-center xl:gap-4 gap-3 py-6">
                     <input
                       type="text"
-                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[340px] xl:h-[50px] h-[45px] px-3 rounded-lg outline-none"
+                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[475px] w-[340px] xl:h-[50px] h-[45px] px-3 rounded-lg outline-none"
                       placeholder="Enter full name..."
                       name="fullName"
                       onChange={changeHanlder}
@@ -69,7 +69,7 @@ const Contact = () => {
 
                     <input
                       type="email"
-                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[475px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
                       placeholder="Enter email eddress..."
                       name="email"
                       onChange={changeHanlder}
@@ -78,7 +78,7 @@ const Contact = () => {
 
                     <input
                       type="tel"
-                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[475px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
                       placeholder="Enter mob. No.."
                       name="phone"
                       onChange={changeHanlder}
@@ -87,7 +87,7 @@ const Contact = () => {
 
                     <input
                       type="text"
-                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[420px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      className="xl:w-[280px] lg:w-[270px] md:w-[480px] sm:w-[475px] w-[340px] xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
                       placeholder="Enter email Subject..."
                       name="subject"
                       onChange={changeHanlder}
@@ -98,14 +98,14 @@ const Contact = () => {
                       row={5}
                       col={10}
                       placeholder="Message...."
-                      className="xl:w-[87%]  md:w-[96%] sm:w-[94%] w-[87%] md:h-[200px] sm:h-[180px] h-[170px] rounded-lg p-3 outline-none"
+                      className="xl:w-[87%]  md:w-[96%] sm:w-[84%] w-[87%] md:h-[200px] sm:h-[180px] h-[170px] rounded-lg p-3 outline-none"
                       name="message"
                       onChange={changeHanlder}
                       value={fromData.message}
                     ></textarea>
                   </div>
 
-                  <div className="w-[120px] xl:ml-12 ml-3">
+                  <div className="w-[120px] xl:ml-12 md:ml-3 ml-11">
                     <button
                       onClick={submitHandler}
                       className="w-full h-full py-2 px-6 gap-1 text-[1.1rem] font-bold rounded-lg bg-[#c1ffff] text-black"

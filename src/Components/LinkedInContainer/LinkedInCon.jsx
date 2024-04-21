@@ -9,7 +9,7 @@ const LinkedInCon = () => {
     <div className="flex lg:flex-row flex-col items-center w-full h-full gap-12 text-black">
       <div className="md:w-[50%] sm:w-[61%] w-[100%]">
         <Tilt>
-          <div className="bg-white lg:w-[76%] md:w-[98%] w-[90%] h-[23.6rem] mx-auto rounded-[13%] flex flex-col gap-4">
+          <div className="bg-white lg:w-[76%] md:w-[98%] w-[65.5%] h-[23.6rem] mx-auto rounded-[13%] flex flex-col gap-4">
             <div className="background"></div>
             <div>
               <img
