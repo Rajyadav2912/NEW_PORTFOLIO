@@ -20,6 +20,8 @@ import Vercel from "./Components/Assets/3D ICON/Vercel.png";
 import PIEMR from "./Components/Assets/Images/PIEMR.png";
 import NBM from "./Components/Assets/Images/NBM.png";
 // projects img
+import Portfolio from "./Components/Assets/Projects/project 1.png";
+import newE_comm from "./Components/Assets/Projects/new E-commerce.png";
 import My_Portfolio from "./Components/Assets/Projects/11 Personal Portfolio.png";
 import Contact_APP from "./Components/Assets/Projects/12 Firebase Contact CRUD.png";
 import Nike_Shoe from "./Components/Assets/Projects/13 Nike store.png";
@@ -58,13 +60,13 @@ const data = {
     // 1. title: "My Portfolio",
     {
       id: 1,
-      title: "My Portfolio",
-      date: "Jan 2024 - feb 2024",
+      title: "Portfolio",
+      date: "March 2024 - April 2024",
       description:
         "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
-      image: My_Portfolio,
+      image: Portfolio,
       link: "",
-      weblink: "",
+      weblink: "https://raj-portfolio-2920.vercel.app/",
       skills: [
         {
           id: 1,
@@ -81,166 +83,56 @@ const data = {
           name: "JavaScript",
           image: Js,
         },
-      ],
-      category: "HTML/CSS/Js",
-    },
-    // 2. title: "Contact APP with CRUD",
-    {
-      id: 2,
-      title: "Contact APP with CRUD",
-      date: "Jan 2024 - feb 2024",
-      description:
-        "Developed a Contact App project with CRUD (Create, Read, Update, Delete) functionality. Implemented Firebase as the backend database for data management. Utilized Vite and React.js for core structure and functionality of application",
-      image: Contact_APP,
-      link: "",
-      weblink: "",
-      skills: [
-        {
-          id: 1,
-          name: "Vite and React.js",
-          image: Vite_React,
-        },
-        {
-          id: 2,
-          name: "Node.js",
-          image: node,
-        },
-        {
-          id: 3,
-          name: "Tailwind.css",
-          image: tailwind,
-        },
         {
           id: 4,
-          name: "Firebase",
-          image: firebase,
+          name: "React.js",
+          image: react,
         },
       ],
       category: "Frontend",
     },
-    // 3 title: "Nike Shoes Website",
+    // 2. title: "My Portfolio",
     {
-      id: 3,
-      title: "Nike Shoes Website",
-      date: "Feb 2024 - March 2024",
+      id: 2,
+      title: "Full Stack E-commerce website",
+      date: "March 2024 - April 2024",
       description:
-        "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
-      image: Nike_Shoe,
+        "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
+      image: newE_comm,
       link: "",
       weblink: "",
       skills: [
         {
           id: 1,
+          name: "MongoDB",
+          image: mongodb,
+        },
+        {
+          id: 2,
+          name: "Express.js",
+          image: express,
+        },
+        {
+          id: 3,
           name: "React.js",
           image: react,
         },
         {
-          id: 2,
+          id: 4,
           name: "Node.js",
           image: node,
         },
         {
-          id: 3,
-          name: "Tailwind.css",
+          id: 5,
+          name: "Tailwind Css",
           image: tailwind,
         },
       ],
-      category: "Frontend",
+      category: "Full Stack",
     },
-    // 4. title: "Weather Tracking Web App",
+    // 4. title: "Contact APP with CRUD",
     {
       id: 4,
-      title: "Weather Tracking Web App",
-      date: "Feb 2024 - March 2024",
-      description:
-        "Created a user-friendly interface using HTML and CSS for smooth experience. Used advanced Js techniques to dynamically update information. Mastered fetch API's integration, combining with Js skills to build an interactive Weather Tracker Web App.",
-      image: Weather_Tracker,
-      link: "",
-      weblink: "",
-      skills: [
-        {
-          id: 1,
-          name: "HTML",
-          image: html,
-        },
-        {
-          id: 2,
-          name: "CSS",
-          image: css,
-        },
-        {
-          id: 3,
-          name: "Javascript",
-          image: Js,
-        },
-      ],
-      category: "Frontend",
-    },
-    // 6. title: "E-commerce Shopping Website",
-    {
-      id: 6,
-      title: "E-commerce Shopping Website",
-      date: "July 2023 - Aug 2024",
-      description:
-        "Built an E-commerce shopping website using HTML, CSS, and JavaScript. Implemented a product catalogue, shopping cart, blog site, about, services and checkout process. Made the website responsive for mobile-friendly and any device.",
-      image: Cara_E_commerce,
-      link: "",
-      weblink: "",
-      skills: [
-        {
-          id: 1,
-          name: "HTML",
-          image: html,
-        },
-        {
-          id: 2,
-          name: "CSS",
-          image: css,
-        },
-        {
-          id: 3,
-          name: "JavaScript",
-          image: Js,
-        },
-      ],
-      category: "Frontend",
-    },
-  ],
-
-  Projects: [
-    // 1. title: "My Portfolio",
-    {
-      id: 1,
-      title: "My Portfolio",
-      category: "Javascript",
-      date: "Jan 2024 - feb 2024",
-      description:
-        "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
-      image: My_Portfolio,
-      link: "",
-      weblink: "",
-      skills: [
-        {
-          id: 1,
-          name: "HTML",
-          image: html,
-        },
-        {
-          id: 2,
-          name: "CSS",
-          image: css,
-        },
-        {
-          id: 3,
-          name: "JavaScript",
-          image: Js,
-        },
-      ],
-      category: "HTML/CSS/Js",
-    },
-    // 2. title: "Contact APP with CRUD",
-    {
-      id: 2,
       title: "Contact APP with CRUD",
       date: "Jan 2024 - feb 2024",
       description:
@@ -272,67 +164,9 @@ const data = {
       ],
       category: "Full Stack",
     },
-    // 3 title: "Nike Shoes Website",
+    // 7. title: "Razorpay Clone",
     {
-      id: 3,
-      title: "Nike Shoes Website",
-      date: "Feb 2024 - March 2024",
-      description:
-        "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
-      image: Nike_Shoe,
-      link: "",
-      weblink: "",
-      skills: [
-        {
-          id: 1,
-          name: "React.js",
-          image: react,
-        },
-        {
-          id: 2,
-          name: "Node.js",
-          image: node,
-        },
-        {
-          id: 3,
-          name: "Tailwind.css",
-          image: tailwind,
-        },
-      ],
-      category: "Frontend",
-    },
-    // 4. title: "Weather Tracking Web App",
-    {
-      id: 4,
-      title: "Weather Tracking Web App",
-      date: "Feb 2024 - March 2024",
-      description:
-        "Created a user-friendly interface using HTML and CSS for smooth experience. Used advanced Js techniques to dynamically update information. Mastered fetch API's integration, combining with Js skills to build an interactive Weather Tracker Web App.",
-      image: Weather_Tracker,
-      link: "",
-      weblink: "",
-      skills: [
-        {
-          id: 1,
-          name: "HTML",
-          image: html,
-        },
-        {
-          id: 2,
-          name: "CSS",
-          image: css,
-        },
-        {
-          id: 3,
-          name: "Javascript",
-          image: Js,
-        },
-      ],
-      category: "Javascript",
-    },
-    // 5. title: "Razorpay Clone",
-    {
-      id: 5,
+      id: 7,
       title: "Razorpay Clone",
       date: "Jan 2024 - Feb 2024",
       description:
@@ -359,9 +193,264 @@ const data = {
       ],
       category: "Frontend",
     },
-    // 6. title: "E-commerce Shopping Website",
+    // 5 title: "Nike Shoes Website",
+    {
+      id: 5,
+      title: "Nike Shoes Website",
+      date: "Feb 2024 - March 2024",
+      description:
+        "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
+      image: Nike_Shoe,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "React.js",
+          image: react,
+        },
+        {
+          id: 2,
+          name: "Node.js",
+          image: node,
+        },
+        {
+          id: 3,
+          name: "Tailwind.css",
+          image: tailwind,
+        },
+      ],
+      category: "Frontend",
+    },
+  ],
+
+  Projects: [
+    // 1. title: "My Portfolio",
+    {
+      id: 1,
+      title: "Portfolio",
+      date: "March 2024 - April 2024",
+      description:
+        "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
+      image: Portfolio,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "CSS",
+          image: css,
+        },
+        {
+          id: 3,
+          name: "JavaScript",
+          image: Js,
+        },
+        {
+          id: 4,
+          name: "React.js",
+          image: react,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 2. title: "My Portfolio",
+    {
+      id: 2,
+      title: "Full Stack E-commerce website",
+      date: "March 2024 - April 2024",
+      description:
+        "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
+      image: newE_comm,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "MongoDB",
+          image: mongodb,
+        },
+        {
+          id: 2,
+          name: "Express.js",
+          image: express,
+        },
+        {
+          id: 3,
+          name: "React.js",
+          image: react,
+        },
+        {
+          id: 4,
+          name: "Node.js",
+          image: node,
+        },
+        {
+          id: 5,
+          name: "Tailwind Css",
+          image: tailwind,
+        },
+      ],
+      category: "Full Stack",
+    },
+    // 3. title: "My Portfolio",
+    {
+      id: 3,
+      title: "My Portfolio",
+      date: "Jan 2024 - feb 2024",
+      description:
+        "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
+      image: My_Portfolio,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "CSS",
+          image: css,
+        },
+        {
+          id: 3,
+          name: "JavaScript",
+          image: Js,
+        },
+      ],
+      category: "HTML/CSS/Js",
+    },
+    // 4. title: "Contact APP with CRUD",
+    {
+      id: 4,
+      title: "Contact APP with CRUD",
+      date: "Jan 2024 - feb 2024",
+      description:
+        "Developed a Contact App project with CRUD (Create, Read, Update, Delete) functionality. Implemented Firebase as the backend database for data management. Utilized Vite and React.js for core structure and functionality of application",
+      image: Contact_APP,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "Vite and React.js",
+          image: Vite_React,
+        },
+        {
+          id: 2,
+          name: "Node.js",
+          image: node,
+        },
+        {
+          id: 3,
+          name: "Tailwind.css",
+          image: tailwind,
+        },
+        {
+          id: 4,
+          name: "Firebase",
+          image: firebase,
+        },
+      ],
+      category: "Full Stack",
+    },
+    // 5 title: "Nike Shoes Website",
+    {
+      id: 5,
+      title: "Nike Shoes Website",
+      date: "Feb 2024 - March 2024",
+      description:
+        "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
+      image: Nike_Shoe,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "React.js",
+          image: react,
+        },
+        {
+          id: 2,
+          name: "Node.js",
+          image: node,
+        },
+        {
+          id: 3,
+          name: "Tailwind.css",
+          image: tailwind,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 6. title: "Weather Tracking Web App",
     {
       id: 6,
+      title: "Weather Tracking Web App",
+      date: "Feb 2024 - March 2024",
+      description:
+        "Created a user-friendly interface using HTML and CSS for smooth experience. Used advanced Js techniques to dynamically update information. Mastered fetch API's integration, combining with Js skills to build an interactive Weather Tracker Web App.",
+      image: Weather_Tracker,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "CSS",
+          image: css,
+        },
+        {
+          id: 3,
+          name: "Javascript",
+          image: Js,
+        },
+      ],
+      category: "Javascript",
+    },
+    // 7. title: "Razorpay Clone",
+    {
+      id: 7,
+      title: "Razorpay Clone",
+      date: "Jan 2024 - Feb 2024",
+      description:
+        "Successfully replicated Razorpay's clone using HTML, CSS, and Tailwind CSS. Ensured a smooth user experience by implementing a responsive website design, making the Razorpay clone accessible across various devices.",
+      image: Razorpay_Clone,
+      link: "",
+      weblink: "",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "Tailwind.css",
+          image: tailwind,
+        },
+        {
+          id: 3,
+          name: "Node.js",
+          image: node,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 8. title: "E-commerce Shopping Website",
+    {
+      id: 8,
       title: "E-commerce Shopping Website",
       date: "July 2023 - Aug 2024",
       description:
@@ -388,9 +477,9 @@ const data = {
       ],
       category: "Javascript",
     },
-    // 7. title: "Password Generator WebApp",
+    // 9. title: "Password Generator WebApp",
     {
-      id: 7,
+      id: 9,
       title: "Password Generator WebApp",
       date: "Feb 2024 - March 2024",
       description:
@@ -417,9 +506,9 @@ const data = {
       ],
       category: "Javascript",
     },
-    // 8. title: "Basice Portfolio",
+    // 10. title: "Basice Portfolio",
     {
-      id: 8,
+      id: 10,
       title: "Basice Portfolio",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -446,9 +535,9 @@ const data = {
       ],
       category: "HTML/CSS",
     },
-    // 9. title: "Client Portfolio Website",
+    // 11. title: "Client Portfolio Website",
     {
-      id: 9,
+      id: 11,
       title: "Client Portfolio Website",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -475,9 +564,9 @@ const data = {
       ],
       category: "HTML/CSS",
     },
-    // 10. title: "Spotify Clones Website",
+    // 12. title: "Spotify Clones Website",
     {
-      id: 10,
+      id: 12,
       title: "Spotify Clones Website",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -504,9 +593,9 @@ const data = {
       ],
       category: "Javascript",
     },
-    // 11. title: "Login Page",
+    // 13. title: "Login Page",
     {
-      id: 11,
+      id: 13,
       title: "Login Page",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -533,9 +622,9 @@ const data = {
       ],
       category: "HTML/CSS",
     },
-    // 12.  title: "Registration From",
+    // 14.  title: "Registration From",
     {
-      id: 12,
+      id: 14,
       title: "Registration From",
       date: "Aug 2023 - Sep 2023",
       description: "Basic Registration website",
