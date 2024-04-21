@@ -8,6 +8,7 @@ import Instagram from "../Assets/3D ICON/Instagram.png";
 import { FaDownload } from "react-icons/fa6";
 import ALLButton from "../Button/ALLButton";
 import resume from "/src/Raj_Yadav_Resume.pdf";
+import { Typewriter } from "react-simple-typewriter";
 
 const Content = () => {
   return (
@@ -21,11 +22,24 @@ const Content = () => {
       >
         Raj Yadav
       </h1>
-      <h2 className="xl:text-[1.9rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.4rem] font-black leading-normal">
+      <h2 className="xl:text-[1.9rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.3rem] font-black leading-normal">
         And I'm
         <span className="auto-typing-1 text-[#f8ce96]">
           {" "}
-          Software Developer
+          <Typewriter
+            words={[
+              "Software Developer",
+              "Full Stack Developer",
+              "Frontend Developer",
+              "Junior Developer",
+            ]}
+            loop={6}
+            cursor
+            cursorStyle="|"
+            typeSpeed={90}
+            deleteSpeed={60}
+            delaySpeed={2000}
+          />
         </span>
       </h2>
       <p className="xl:text-[1.1rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.85rem] mt-2 font-semibold leading-normal">

@@ -7,6 +7,7 @@ import Arrow from "../Assets/Images/arrow.svg";
 import { Link } from "react-router-dom";
 import Tilt from "../Tilt/Tilt.jsx";
 import ALLButton from "../Button/ALLButton.jsx";
+import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
   const { title, image, heading, description, email, location } = data.About;
@@ -44,10 +45,24 @@ const About = () => {
             />
           </h1>
 
-          <h2 className="xl:text-[1.7rem] mx-auto sm:text-[1.5rem] text-[1.05rem] font-semibold leading-normal">
+          <h2 className="xl:text-[1.66rem] lg:mx-0 md:mx-auto sm:text-[1.5rem] text-[1.02rem] font-semibold leading-normal">
             {heading}
-            <span className="auto-typing-2 text-[#f8ce96]">
-              Software Developer
+            <span className="auto-typing-1 text-[#f8ce96]">
+              {" "}
+              <Typewriter
+                words={[
+                  "Software Developer",
+                  "Full Stack Developer",
+                  "Frontend Developer",
+                  "Junior Developer",
+                ]}
+                loop={6}
+                cursor
+                cursorStyle="|"
+                typeSpeed={90}
+                deleteSpeed={60}
+                delaySpeed={2000}
+              />
             </span>
           </h2>
 
