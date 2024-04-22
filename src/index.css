@@ -161,6 +161,14 @@ code {
   margin-top: 1rem;
 }
 
+.shadowcon {
+  box-shadow: 0;
+}
+
+.shadowcon:hover {
+  box-shadow: 0 0 25px #b8f7f5;
+}
+
 .about-text {
   color: greenyellow;
   font-weight: 900;

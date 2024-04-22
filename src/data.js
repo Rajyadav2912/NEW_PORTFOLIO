@@ -61,7 +61,7 @@ const data = {
     {
       id: 1,
       title: "Portfolio",
-      date: "March 2024 - April 2024",
+      date: "Mar 2024 - Apr 2024",
       description:
         "Designed a personal portfolio website showcasing skills and projects for personal growth. Applied successfully email.js API for form validation and sending emails/messages for collaboration and other. Leveraged JavaScript, React.js, and Node.js to create interactive & dynamic features, enhancing user experience. Utilized Tailwind CSS for styling and layout, ensuring a responsiveness to across devices. Integrated 3D animations and 3D images for enhanced visual appeal and engagement.",
       image: Portfolio,
@@ -100,7 +100,7 @@ const data = {
     {
       id: 2,
       title: "Full Stack E-commerce website",
-      date: "March 2024 - April 2024",
+      date: "Mar 2024 - Apr 2024",
       description:
         "Developed a full-stack E-commerce website with an Admin panel using MERN and Tailwind.css. Gained expertise in database management, server-side scripting, dynamic UI development, and responsive design. Utilized JSON Web Token (JWT) for secure authentication & optimizing database queries, and user-friendly experiences. Enhanced coding expertise through hands-on project experience, gaining valuable problem-solving skills and adaptability.",
       image: newE_comm,
@@ -202,7 +202,7 @@ const data = {
     {
       id: 5,
       title: "Nike Shoes Website",
-      date: "Feb 2024 - March 2024",
+      date: "Feb 2024 - Mar 2024",
       description:
         "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
       image: Nike_Shoe,
@@ -234,7 +234,7 @@ const data = {
     {
       id: 1,
       title: "Portfolio",
-      date: "March 2024 - April 2024",
+      date: "Mar 2024 - Apr 2024",
       description:
         "Designed a personal portfolio website showcasing skills and projects for personal growth. Applied successfully email.js API for form validation and sending emails/messages for collaboration and other. Leveraged JavaScript, React.js, and Node.js to create interactive & dynamic features, enhancing user experience. Utilized Tailwind CSS for styling and layout, ensuring a responsiveness to across devices. Integrated 3D animations and 3D images for enhanced visual appeal and engagement.",
       image: Portfolio,
@@ -273,7 +273,7 @@ const data = {
     {
       id: 2,
       title: "Full Stack E-commerce website",
-      date: "March 2024 - April 2024",
+      date: "Mar 2024 - Apr 2024",
       description:
         "Developed a full-stack E-commerce website with an Admin panel using MERN and Tailwind.css. Gained expertise in database management, server-side scripting, dynamic UI development, and responsive design. Utilized JSON Web Token (JWT) for secure authentication & optimizing database queries, and user-friendly experiences. Enhanced coding expertise through hands-on project experience, gaining valuable problem-solving skills and adaptability.",
       image: newE_comm,
@@ -375,7 +375,7 @@ const data = {
     {
       id: 5,
       title: "Nike Shoes Website",
-      date: "Feb 2024 - March 2024",
+      date: "Feb 2024 - Mar 2024",
       description:
         "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
       image: Nike_Shoe,
@@ -404,7 +404,7 @@ const data = {
     {
       id: 6,
       title: "Weather Tracking Web App",
-      date: "Feb 2024 - March 2024",
+      date: "Feb 2024 - Mar 2024",
       description:
         "Created a user-friendly interface using HTML and CSS for smooth experience. Used advanced Js techniques to dynamically update information. Mastered fetch API's integration, combining with Js skills to build an interactive Weather Tracker Web App.",
       image: Weather_Tracker,
@@ -491,7 +491,7 @@ const data = {
     {
       id: 9,
       title: "Password Generator WebApp",
-      date: "Feb 2024 - March 2024",
+      date: "Feb 2024 - Mar 2024",
       description:
         "Built a strong Password Generator with HTML, CSS, and JavaScript for reliable and secure password creation. Used javaScript, core concepts like methods, properties, and attributes.",
       image: Password_generator,

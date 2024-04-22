@@ -48,13 +48,15 @@ const NavBar = () => {
   //   e.target.classList.toggle("close");
   // };
 
-  const hanlderScroll = (event) => {
-    // if (window.scrollY > 100) {
-    //   setMenu(true);
-    // } else {
-    //   setMenu(false);
-    // }
-    console.log("call", event.current);
+  const hanlderScroll = () => {
+    useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+    console.log("call");
   };
 
   return (
@@ -121,26 +123,36 @@ const NavBar = () => {
       <div className="xl:flex  hidden xl:w-[44%] w-0">
         <ul
           // ref={openRef}
-          className="lg:flex hidden justify-between lg:gap-10 gap-8 list-none xl:text-[1.2rem] text-[1rem] font-medium"
+          className="lg:flex hidden justify-between lg:gap-10 gap-8 list-none xl:text-[1.02rem] text-[1rem] font-medium"
         >
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={hanlderScroll}>
+              Home
+            </Link>
             {/* <a href="#home">Home</a> */}
           </li>
 
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={hanlderScroll}>
+              About
+            </Link>
             {/* <a href="#about">About</a> */}
           </li>
 
           <li>
-            <Link to="/education">Education</Link>
+            <Link to="/education" onClick={hanlderScroll}>
+              Education
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects" onClick={hanlderScroll}>
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={hanlderScroll}>
+              Contact
+            </Link>
           </li>
           <li onClick={themeHandler}>
             {moon ? <FaSun fontSize={30} /> : <FaMoon fontSize={30} />}
