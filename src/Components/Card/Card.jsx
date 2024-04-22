@@ -5,7 +5,7 @@ import githubIcon from "../Assets/3D ICON/github.png";
 import Tilt from "../Tilt/Tilt";
 import ALLButton from "../Button/ALLButton";
 
-const Card = ({ image, title, date, info, weblink, skill, index }) => {
+const Card = ({ image, title, date, info, link, weblink, skill, index }) => {
   const [readmore, setReadMore] = useState(false);
 
   const description = readmore ? info : `${info.substring(0, 150)}....`;
@@ -23,8 +23,8 @@ const Card = ({ image, title, date, info, weblink, skill, index }) => {
         key={index}
       >
         <div className="relative">
-          <img src={image} alt="" />
-          <Link>
+          <img src={image} alt="" className=" rounded-t-[2rem] border" />
+          <Link to={link}>
             <img
               src={githubIcon}
               alt=""
@@ -58,6 +58,7 @@ const Card = ({ image, title, date, info, weblink, skill, index }) => {
           <ALLButton
             text={"Go to Web page"}
             linkto={weblink}
+            page={"_blank"}
             icon={<img src={Arrow} alt="arrow" loading="lazy" />}
           />
           {/* <Link to={weblink}>

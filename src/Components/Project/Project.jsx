@@ -8,6 +8,7 @@ import ALLButton from "../Button/ALLButton";
 
 const Project = () => {
   const pro = Data.Project;
+  console.log(pro);
 
   return (
     <div className="pt-[50px]">
@@ -26,7 +27,8 @@ const Project = () => {
               image={data.image}
               title={data.title}
               info={data.description}
-              link={data.weblink}
+              link={data.link}
+              weblink={data.weblink}
               skill={data.skills}
             />
           ))}

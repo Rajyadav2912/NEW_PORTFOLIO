@@ -21,7 +21,8 @@ const ALLProject = ({ proData, category }) => {
             image={data.image}
             title={data.title}
             info={data.description}
-            link={data.weblink}
+            link={data.link}
+            weblink={data.weblink}
             skill={data.skills}
           />
         )

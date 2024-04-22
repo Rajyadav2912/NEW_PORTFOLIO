@@ -63,30 +63,35 @@ const data = {
       title: "Portfolio",
       date: "March 2024 - April 2024",
       description:
-        "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
+        "Designed a personal portfolio website showcasing skills and projects for personal growth. Applied successfully email.js API for form validation and sending emails/messages for collaboration and other. Leveraged JavaScript, React.js, and Node.js to create interactive & dynamic features, enhancing user experience. Utilized Tailwind CSS for styling and layout, ensuring a responsiveness to across devices. Integrated 3D animations and 3D images for enhanced visual appeal and engagement.",
       image: Portfolio,
-      link: "",
+      link: "https://github.com/Rajyadav2912/NEW_PORTFOLIO",
       weblink: "https://raj-portfolio-2920.vercel.app/",
       skills: [
         {
           id: 1,
+          name: "React.js",
+          image: react,
+        },
+        {
+          id: 2,
+          name: "Tailwind Css",
+          image: tailwind,
+        },
+        {
+          id: 3,
           name: "HTML",
           image: html,
         },
         {
-          id: 2,
+          id: 4,
           name: "CSS",
           image: css,
         },
         {
-          id: 3,
+          id: 5,
           name: "JavaScript",
           image: Js,
-        },
-        {
-          id: 4,
-          name: "React.js",
-          image: react,
         },
       ],
       category: "Frontend",
@@ -99,7 +104,7 @@ const data = {
       description:
         "Developed a full-stack E-commerce website with an Admin panel using MERN and Tailwind.css. Gained expertise in database management, server-side scripting, dynamic UI development, and responsive design. Utilized JSON Web Token (JWT) for secure authentication & optimizing database queries, and user-friendly experiences. Enhanced coding expertise through hands-on project experience, gaining valuable problem-solving skills and adaptability.",
       image: newE_comm,
-      link: "",
+      link: "https://github.com/Rajyadav2912/E-commerce-Shopping-website-MERN",
       weblink: "",
       skills: [
         {
@@ -138,8 +143,8 @@ const data = {
       description:
         "Developed a Contact App project with CRUD (Create, Read, Update, Delete) functionality. Implemented Firebase as the backend database for data management. Utilized Vite and React.js for core structure and functionality of application",
       image: Contact_APP,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/Learn_React_Js_with_Projects/tree/master/07_Projects/contact-app-crud",
+      weblink: "https://contact-app-crud.vercel.app/",
       skills: [
         {
           id: 1,
@@ -172,7 +177,7 @@ const data = {
       description:
         "Successfully replicated Razorpay's clone using HTML, CSS, and Tailwind CSS. Ensured a smooth user experience by implementing a responsive website design, making the Razorpay clone accessible across various devices.",
       image: Razorpay_Clone,
-      link: "",
+      link: "https://github.com/Rajyadav2912/05-RAZOR_PAY-Clone",
       weblink: "",
       skills: [
         {
@@ -201,8 +206,8 @@ const data = {
       description:
         "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
       image: Nike_Shoe,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/Learn_React_Js_with_Projects/tree/master/05_Projects/nike-shoes-landing-page",
+      weblink: "https://nike-shoes-store-orcin.vercel.app/",
       skills: [
         {
           id: 1,
@@ -231,35 +236,40 @@ const data = {
       title: "Portfolio",
       date: "March 2024 - April 2024",
       description:
-        "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
+        "Designed a personal portfolio website showcasing skills and projects for personal growth. Applied successfully email.js API for form validation and sending emails/messages for collaboration and other. Leveraged JavaScript, React.js, and Node.js to create interactive & dynamic features, enhancing user experience. Utilized Tailwind CSS for styling and layout, ensuring a responsiveness to across devices. Integrated 3D animations and 3D images for enhanced visual appeal and engagement.",
       image: Portfolio,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/NEW_PORTFOLIO",
+      weblink: "https://raj-portfolio-2920.vercel.app/",
       skills: [
         {
           id: 1,
+          name: "React.js",
+          image: react,
+        },
+        {
+          id: 2,
+          name: "Tailwind Css",
+          image: tailwind,
+        },
+        {
+          id: 3,
           name: "HTML",
           image: html,
         },
         {
-          id: 2,
+          id: 4,
           name: "CSS",
           image: css,
         },
         {
-          id: 3,
+          id: 5,
           name: "JavaScript",
           image: Js,
-        },
-        {
-          id: 4,
-          name: "React.js",
-          image: react,
         },
       ],
       category: "Frontend",
     },
-    // 2. title: "My Portfolio",
+    // 2. title: "Full Stack E-commerce website",
     {
       id: 2,
       title: "Full Stack E-commerce website",
@@ -267,7 +277,7 @@ const data = {
       description:
         "Developed a full-stack E-commerce website with an Admin panel using MERN and Tailwind.css. Gained expertise in database management, server-side scripting, dynamic UI development, and responsive design. Utilized JSON Web Token (JWT) for secure authentication & optimizing database queries, and user-friendly experiences. Enhanced coding expertise through hands-on project experience, gaining valuable problem-solving skills and adaptability.",
       image: newE_comm,
-      link: "",
+      link: "https://github.com/Rajyadav2912/E-commerce-Shopping-website-MERN",
       weblink: "",
       skills: [
         {
@@ -306,8 +316,8 @@ const data = {
       description:
         "Developed a amazing portfolio website using HTML, CSS, and JavaScript. Implemented animations, 3D effects with CSS and full responsive Integrated ScrollReveal for smooth scroll and utilized email.js API for contact",
       image: My_Portfolio,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/RAJ_PORTFOLIO",
+      weblink: "https://raj-portfolio-29.netlify.app/",
       skills: [
         {
           id: 1,
@@ -335,8 +345,8 @@ const data = {
       description:
         "Developed a Contact App project with CRUD (Create, Read, Update, Delete) functionality. Implemented Firebase as the backend database for data management. Utilized Vite and React.js for core structure and functionality of application",
       image: Contact_APP,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/Learn_React_Js_with_Projects/tree/master/07_Projects/contact-app-crud",
+      weblink: "https://contact-app-crud.vercel.app/",
       skills: [
         {
           id: 1,
@@ -369,8 +379,8 @@ const data = {
       description:
         "Developed an e-commerce Nike shoe store with integrated contact support. Utilized React.js and JavaScript for front-end development. Implemented Tailwind CSS for modern and efficient styling",
       image: Nike_Shoe,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/Learn_React_Js_with_Projects/tree/master/05_Projects/nike-shoes-landing-page",
+      weblink: "https://nike-shoes-store-orcin.vercel.app/",
       skills: [
         {
           id: 1,
@@ -398,8 +408,8 @@ const data = {
       description:
         "Created a user-friendly interface using HTML and CSS for smooth experience. Used advanced Js techniques to dynamically update information. Mastered fetch API's integration, combining with Js skills to build an interactive Weather Tracker Web App.",
       image: Weather_Tracker,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/08-WEATHER-APP",
+      weblink: "https://weather-tracker-app-8b6e69.netlify.app/",
       skills: [
         {
           id: 1,
@@ -427,7 +437,7 @@ const data = {
       description:
         "Successfully replicated Razorpay's clone using HTML, CSS, and Tailwind CSS. Ensured a smooth user experience by implementing a responsive website design, making the Razorpay clone accessible across various devices.",
       image: Razorpay_Clone,
-      link: "",
+      link: "https://github.com/Rajyadav2912/05-RAZOR_PAY-Clone",
       weblink: "",
       skills: [
         {
@@ -456,8 +466,8 @@ const data = {
       description:
         "Built an E-commerce shopping website using HTML, CSS, and JavaScript. Implemented a product catalogue, shopping cart, blog site, about, services and checkout process. Made the website responsive for mobile-friendly and any device.",
       image: Cara_E_commerce,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/E-commer_Shopping_Website",
+      weblink: "https://e-commerce-shopping-website-29.netlify.app/",
       skills: [
         {
           id: 1,
@@ -485,8 +495,8 @@ const data = {
       description:
         "Built a strong Password Generator with HTML, CSS, and JavaScript for reliable and secure password creation. Used javaScript, core concepts like methods, properties, and attributes.",
       image: Password_generator,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/07-PASSWORD-GENERATOR",
+      weblink: "https://rajyadav2912.github.io/07-PASSWORD-GENERATOR/",
       skills: [
         {
           id: 1,
@@ -514,8 +524,8 @@ const data = {
       description:
         "Built a portfolio website to showcase web development skills. Constantly updated website with new projects to track my progress and improve relevant skills. Learned about the importance of design and usability.",
       image: Basic_Portfolio,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/Raj_Portfolio_2920",
+      weblink: "https://raj-portfolio-2920.netlify.app/",
       skills: [
         {
           id: 1,
@@ -543,8 +553,8 @@ const data = {
       description:
         "Designed and developed a professional Portfolio website to showcase skills, projects, and achievements. Created an attractive and user-friendly interface to engage potential employers.",
       image: Client_Portfolio,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/Portfolio-Website",
+      weblink: "https://rajyadav2912.github.io/Portfolio-Website/",
       skills: [
         {
           id: 1,
@@ -572,7 +582,7 @@ const data = {
       description:
         "Developed a responsive music streaming website using HTML, CSS, and JavaScript, replicating the user interface of Spotify. Created a visually appealing and user-friendly design, ensuring seamless navigation and ease of use.",
       image: Spotify_clone,
-      link: "",
+      link: "https://github.com/Rajyadav2912/Spotify_Clone",
       weblink: "",
       skills: [
         {
@@ -601,8 +611,8 @@ const data = {
       description:
         "Our project focuses on creating a user-friendly login page for our website. It provides a secure and streamlined login process, allowing users to access their personalized accounts with ease.",
       image: Login_Page,
-      link: "",
-      weblink: "",
+      link: "https://github.com/Rajyadav2912/Login-Page",
+      weblink: "https://website-login-page-2920.netlify.app/",
       skills: [
         {
           id: 1,

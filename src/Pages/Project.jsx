@@ -19,8 +19,6 @@ const Project = () => {
   //   console.log(Items);
   // };
 
-
-
   return (
     <div className="py-[90px]">
       <div className="mx-auto max-w-[740px] text-center">
