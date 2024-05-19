@@ -20,5 +20,3 @@ const Main = () => {
 };
 
 export default Main;
-
-0

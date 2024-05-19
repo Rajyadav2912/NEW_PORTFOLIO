@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 
 const App = () => {
-  const [showBackToTop, setShowBackToTop] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(true);
 
   // console.log(window.scrollY);
 
@@ -39,7 +39,7 @@ const App = () => {
   };
 
   return (
-    <div className="w-screen h-screen mx-auto overflow-x-hidden bg-black text-white">
+    <div className="app w-screen h-screen mx-auto overflow-x-hidden bg-black text-white">
       <ScrollToTop />
       <div className="relative flex justify-center mx-auto">
         <NavBar onClick={window.scrollTo(0, 0)} />
