@@ -8,12 +8,12 @@ import Project from "./Pages/Project";
 import Main from "./Pages/Main";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
-import ScrollToTop from "./ScrollTop";
+// import ScrollToTop from "./ScrollTop";
 import { useEffect, useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 
 const App = () => {
-  const [showBackToTop, setShowBackToTop] = useState(true);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   // console.log(window.scrollY);
 
@@ -31,16 +31,16 @@ const App = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [showBackToTop]);
+  }, []);
 
   const handleBackToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
     console.log("call scroll");
   };
 
   return (
     <div className="app w-screen h-screen mx-auto overflow-x-hidden bg-black text-white">
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <div className="relative flex justify-center mx-auto">
         <NavBar onClick={window.scrollTo(0, 0)} />
       </div>

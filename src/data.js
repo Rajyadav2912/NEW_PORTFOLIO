@@ -34,6 +34,7 @@ import Client_Portfolio from "./Components/Assets/Projects/03 Pro - Client Portf
 import Spotify_clone from "./Components/Assets/Projects/04 Pro - Spotify Clone 1.png";
 import Login_Page from "./Components/Assets/Projects/05 Pro - Login Page 1.png";
 import Registration_page from "./Components/Assets/Projects/08 Registration Page.png";
+import TechSoft from "./Components/Assets/Projects/Tech_Soft Blog.png";
 import html from "./Components/Assets/Projects/Html.png";
 import css from "./Components/Assets/Projects/Css.png";
 import Js from "./Components/Assets/Projects/Js.png";
@@ -96,9 +97,48 @@ const data = {
       ],
       category: "Frontend",
     },
-    // 2. title: "My Portfolio",
+    // 1.  title: "Tech-Soft Blog website",
     {
       id: 2,
+      title: "Tech-Soft Blog website",
+      date: "Feb 2024 - Mar 2024",
+      description:
+        "Created and executed the Tech-Soft Blog website to showcase trending technologies, software, AI, and applications. Rendered React.js for the front end to build a flexible and interactive user experience. Implemented API integration to fetch and display real-time data on the latest new trends. Efficiently managed state to ensure seamless data handling and updates.",
+      image: TechSoft,
+      link: "https://github.com/Rajyadav2912/Tech_Soft_Blog-Website",
+      weblink: "https://tech-soft-blog.vercel.app/",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "CSS",
+          image: css,
+        },
+        {
+          id: 3,
+          name: "JavaScript",
+          image: Js,
+        },
+        {
+          id: 4,
+          name: "React.js",
+          image: react,
+        },
+        {
+          id: 5,
+          name: "Tailwind",
+          image: tailwind,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 2. title: "My Portfolio",
+    {
+      id: 3,
       title: "Full Stack E-commerce website",
       date: "Mar 2024 - Apr 2024",
       description:
@@ -169,35 +209,6 @@ const data = {
       ],
       category: "Full Stack",
     },
-    // 7. title: "Razorpay Clone",
-    {
-      id: 7,
-      title: "Razorpay Clone",
-      date: "Jan 2024 - Feb 2024",
-      description:
-        "Successfully replicated Razorpay's clone using HTML, CSS, and Tailwind CSS. Ensured a smooth user experience by implementing a responsive website design, making the Razorpay clone accessible across various devices.",
-      image: Razorpay_Clone,
-      link: "https://github.com/Rajyadav2912/05-RAZOR_PAY-Clone",
-      weblink: "",
-      skills: [
-        {
-          id: 1,
-          name: "HTML",
-          image: html,
-        },
-        {
-          id: 2,
-          name: "Tailwind.css",
-          image: tailwind,
-        },
-        {
-          id: 3,
-          name: "Node.js",
-          image: node,
-        },
-      ],
-      category: "Frontend",
-    },
     // 5 title: "Nike Shoes Website",
     {
       id: 5,
@@ -230,9 +241,48 @@ const data = {
   ],
 
   Projects: [
-    // 1. title: "My Portfolio",
+    // 1.  title: "Tech-Soft Blog website",
     {
       id: 1,
+      title: "Tech-Soft Blog website",
+      date: "Feb 2024 - Mar 2024",
+      description:
+        "Created and executed the Tech-Soft Blog website to showcase trending technologies, software, AI, and applications. Rendered React.js for the front end to build a flexible and interactive user experience. Implemented API integration to fetch and display real-time data on the latest new trends. Efficiently managed state to ensure seamless data handling and updates.",
+      image: TechSoft,
+      link: "https://github.com/Rajyadav2912/Tech_Soft_Blog-Website",
+      weblink: "https://tech-soft-blog.vercel.app/",
+      skills: [
+        {
+          id: 1,
+          name: "HTML",
+          image: html,
+        },
+        {
+          id: 2,
+          name: "CSS",
+          image: css,
+        },
+        {
+          id: 3,
+          name: "JavaScript",
+          image: Js,
+        },
+        {
+          id: 4,
+          name: "React.js",
+          image: react,
+        },
+        {
+          id: 5,
+          name: "Tailwind",
+          image: tailwind,
+        },
+      ],
+      category: "Frontend",
+    },
+    // 2. title: "My Portfolio",
+    {
+      id: 2,
       title: "Portfolio",
       date: "Mar 2024 - Apr 2024",
       description:
@@ -269,9 +319,9 @@ const data = {
       ],
       category: "Frontend",
     },
-    // 2. title: "Full Stack E-commerce website",
+    // 3. title: "Full Stack E-commerce website",
     {
-      id: 2,
+      id: 3,
       title: "Full Stack E-commerce website",
       date: "Mar 2024 - Apr 2024",
       description:
@@ -308,9 +358,9 @@ const data = {
       ],
       category: "Full Stack",
     },
-    // 3. title: "My Portfolio",
+    // 4. title: "My Portfolio",
     {
-      id: 3,
+      id: 4,
       title: "My Portfolio",
       date: "Jan 2024 - feb 2024",
       description:
@@ -337,9 +387,9 @@ const data = {
       ],
       category: "HTML/CSS/Js",
     },
-    // 4. title: "Contact APP with CRUD",
+    // 5. title: "Contact APP with CRUD",
     {
-      id: 4,
+      id: 5,
       title: "Contact APP with CRUD",
       date: "Jan 2024 - feb 2024",
       description:
@@ -371,9 +421,9 @@ const data = {
       ],
       category: "Full Stack",
     },
-    // 5 title: "Nike Shoes Website",
+    // 6 title: "Nike Shoes Website",
     {
-      id: 5,
+      id: 6,
       title: "Nike Shoes Website",
       date: "Feb 2024 - Mar 2024",
       description:
@@ -400,9 +450,9 @@ const data = {
       ],
       category: "Frontend",
     },
-    // 6. title: "Weather Tracking Web App",
+    // 7. title: "Weather Tracking Web App",
     {
-      id: 6,
+      id: 7,
       title: "Weather Tracking Web App",
       date: "Feb 2024 - Mar 2024",
       description:
@@ -429,9 +479,9 @@ const data = {
       ],
       category: "Javascript",
     },
-    // 7. title: "Razorpay Clone",
+    // 8. title: "Razorpay Clone",
     {
-      id: 7,
+      id: 8,
       title: "Razorpay Clone",
       date: "Jan 2024 - Feb 2024",
       description:
@@ -458,9 +508,9 @@ const data = {
       ],
       category: "Frontend",
     },
-    // 8. title: "E-commerce Shopping Website",
+    // 9. title: "E-commerce Shopping Website",
     {
-      id: 8,
+      id: 9,
       title: "E-commerce Shopping Website",
       date: "July 2023 - Aug 2024",
       description:
@@ -487,9 +537,9 @@ const data = {
       ],
       category: "Javascript",
     },
-    // 9. title: "Password Generator WebApp",
+    // 10. title: "Password Generator WebApp",
     {
-      id: 9,
+      id: 10,
       title: "Password Generator WebApp",
       date: "Feb 2024 - Mar 2024",
       description:
@@ -516,9 +566,9 @@ const data = {
       ],
       category: "Javascript",
     },
-    // 10. title: "Basice Portfolio",
+    // 11. title: "Basice Portfolio",
     {
-      id: 10,
+      id: 11,
       title: "Basice Portfolio",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -545,9 +595,9 @@ const data = {
       ],
       category: "HTML/CSS",
     },
-    // 11. title: "Client Portfolio Website",
+    // 12. title: "Client Portfolio Website",
     {
-      id: 11,
+      id: 12,
       title: "Client Portfolio Website",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -574,9 +624,9 @@ const data = {
       ],
       category: "HTML/CSS",
     },
-    // 12. title: "Spotify Clones Website",
+    // 13. title: "Spotify Clones Website",
     {
-      id: 12,
+      id: 13,
       title: "Spotify Clones Website",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -603,9 +653,9 @@ const data = {
       ],
       category: "Javascript",
     },
-    // 13. title: "Login Page",
+    // 14. title: "Login Page",
     {
-      id: 13,
+      id: 14,
       title: "Login Page",
       date: "Aug 2023 - Sep 2023",
       description:
@@ -632,9 +682,9 @@ const data = {
       ],
       category: "HTML/CSS",
     },
-    // 14.  title: "Registration From",
+    // 15.  title: "Registration From",
     {
-      id: 14,
+      id: 15,
       title: "Registration From",
       date: "Aug 2023 - Sep 2023",
       description: "Basic Registration website",

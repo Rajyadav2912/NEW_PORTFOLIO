@@ -7,7 +7,7 @@ import Facebook from "../Assets/3D ICON/Facebook.png";
 import Instagram from "../Assets/3D ICON/Instagram.png";
 import { FaDownload } from "react-icons/fa6";
 import ALLButton from "../Button/ALLButton";
-import resume from "/src/Raj_Yadav_Resume.pdf";
+import resume from "/src/Raj Yadav_Resume.pdf";
 import { Typewriter } from "react-simple-typewriter";
 
 const Content = () => {
