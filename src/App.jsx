@@ -42,6 +42,7 @@ const App = () => {
     <div className="app w-screen h-screen mx-auto overflow-x-hidden bg-black text-white">
       {/* <ScrollToTop /> */}
       <div className="relative flex justify-center mx-auto">
+        {/* <StarBackground /> */}
         <NavBar onClick={window.scrollTo(0, 0)} />
       </div>
       <Routes>

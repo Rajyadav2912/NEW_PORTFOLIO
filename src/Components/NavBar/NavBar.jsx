@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../Assets/Images/Logo 2.png";
 import circle from "../Assets/Images/circle.svg";
 import { FaMoon, FaSun } from "react-icons/fa";
@@ -100,31 +100,31 @@ const NavBar = () => {
             className="flex flex-col w-[10rem] p-4 gap-5 items-center list-none xl:text-[1.2rem] text-[1rem] font-semibold "
           >
             <li>
-              <Link to="/" onClick={hanlderScroll}>
+              <NavLink to="/" onClick={hanlderScroll}>
                 Home
-              </Link>
+              </NavLink>
               {/* <a href="#home">Home</a> */}
             </li>
             <li>
-              <Link to="/about" onClick={hanlderScroll}>
+              <NavLink to="/about" onClick={hanlderScroll}>
                 About
-              </Link>
+              </NavLink>
               {/* <a href="#about">About</a> */}
             </li>
             <li>
-              <Link to="/education" onClick={hanlderScroll}>
+              <NavLink to="/education" onClick={hanlderScroll}>
                 Education
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects" onClick={hanlderScroll}>
+              <NavLink to="/projects" onClick={hanlderScroll}>
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" onClick={hanlderScroll}>
+              <NavLink to="/contact" onClick={hanlderScroll}>
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         )}
@@ -136,31 +136,31 @@ const NavBar = () => {
           className="lg:flex hidden justify-between lg:gap-10 gap-8 list-none xl:text-[1.02rem] text-[1rem] font-medium"
         >
           <li>
-            <Link to="/" onClick={hanlderScroll}>
+            <NavLink to="/" onClick={hanlderScroll}>
               Home
-            </Link>
+            </NavLink>
             {/* <a href="#home">Home</a> */}
           </li>
           <li>
-            <Link to="/about" onClick={hanlderScroll}>
+            <NavLink to="/about" onClick={hanlderScroll}>
               About
-            </Link>
+            </NavLink>
             {/* <a href="#about">About</a> */}
           </li>
           <li>
-            <Link to="/education" onClick={hanlderScroll}>
+            <NavLink to="/education" onClick={hanlderScroll}>
               Education
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/projects" onClick={hanlderScroll}>
+            <NavLink to="/projects" onClick={hanlderScroll}>
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" onClick={hanlderScroll}>
+            <NavLink to="/contact" onClick={hanlderScroll}>
               Contact
-            </Link>
+            </NavLink>
           </li>
           <li onClick={themeHandler}>
             {moon ? <FaSun fontSize={30} /> : <FaMoon fontSize={30} />}
