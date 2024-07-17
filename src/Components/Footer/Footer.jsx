@@ -87,16 +87,16 @@ const Footer = () => {
               Indore(M.P) - 452010, India
             </p>
             <div className="flex gap-3">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/rajyadav-2920r0218j8/">
                 <img src={linkedin} alt="" className="w-[55px]" />
               </a>
-              <a href="#">
+              <a href="https://github.com/Rajyadav2912">
                 <img src={github} alt="" className="w-[55px]" />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/profile.php?id=1000118515058">
                 <img src={fb} alt="" className="w-[55px]" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/yadav_raj.29">
                 <img src={insta} alt="" className="w-[55px]" />
               </a>
             </div>

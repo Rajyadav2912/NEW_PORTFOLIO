@@ -43,8 +43,8 @@ const Content = () => {
         </span>
       </h2>
       <p className="xl:text-[1.1rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.85rem] mt-2 font-semibold leading-normal">
-        Currently, I'm 4th Year B.Tech(ECE) student from PIEMR at Indore. I am
-        passionate about the Software Industry.
+        I recently completed my B.Tech in ECE from PIEMR, Indore. I am
+        passionate about the software industry.
       </p>
       <div className="flex md:justify-between sm:gap-4 gap-2  mt-4 xl:w-[25rem] w-[24rem]">
         <Link
@@ -57,7 +57,7 @@ const Content = () => {
             className="xl:w-[4.5rem] md:w-[3.6rem] w-[3.4rem]"
           />
         </Link>
-        <Link to="#">
+        <Link to="mailto:rajyadav7047@gmail.com">
           <img
             src={Mail}
             alt="mail"

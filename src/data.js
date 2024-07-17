@@ -51,7 +51,7 @@ const data = {
     title: "ABOUT ME ",
     heading: "Hi, I'm Raj Yadav & I'm ",
     description:
-      "Currently in my 4th year pursuing a B.Tech in Electronics and Communication Engineering at PIEMR, I'm deeply passionate about the Software industry. As an avid learner and a naturally curious individual, I thrive on challenges and am always eager to explore new horizons in my academic and professional journey.",
+      "I recently completed my B.Tech in ECE from PIEMR, Indore. I'm passionate about the software industry and thrive on challenges. As an avid learner with a natural curiosity, I am eager to explore new horizons in both my academic and professional journey.",
     image: About_img,
     email: "rajyadav7047@gmail.com",
     location: "Indore (M.P), 452010",
@@ -716,7 +716,7 @@ const data = {
     {
       id: 1,
       name: "Prestige Institute of Engineering Management & Research, Indore",
-      date: "June 2020 - June 2024 | Pursuing",
+      date: "June 2020 - June 2024",
       branch: "Branch: Electronic and Communication Engineering",
       image: PIEMR,
       standard: "Year: 4th / 8th semester  ",
